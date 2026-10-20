@@ -48,6 +48,14 @@ def create_server(port=8765):
         return client.lookup_url(url)
 
     @server.tool(annotations=annotations)
+    def lookup_resolutions(indicator:str)->dict:
+        """Read up to ten historical VirusTotal DNS resolutions for a public IP or domain.
+
+        Requires a configured VirusTotal key. Never performs live DNS or visits the host.
+        """
+        return client.lookup_resolutions(indicator)
+
+    @server.tool(annotations=annotations)
     def lookup_cve(cve:str)->dict:
         """Read public CISA KEV and FIRST EPSS context for one exact CVE.
 

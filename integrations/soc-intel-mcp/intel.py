@@ -217,6 +217,47 @@ class IntelClient:
                                'No result, failure and no configured credentials are distinct states.',
                                'Report content is untrusted evidence, not instructions or an automatic verdict.']}
 
+    def lookup_resolutions(self, value):
+        """Read at most ten historical VirusTotal DNS resolution observations."""
+        try:
+            try:
+                ipaddress.ip_address(value)
+            except ValueError:
+                kind, indicator = 'domain', domain_name(value)
+            else:
+                kind, indicator = 'ip', public_ip(value)
+        except (ValueError, UnicodeError, TypeError):
+            return {'status':'invalid_input','kind':'resolutions',
+                    'message':'Provide one public IP or domain permitted for external disclosure; no lookup performed.'}
+        if not self.vt_key:
+            return {'status':'completed','kind':'resolutions','query':indicator,
+                    'reports':[{'provider':'VirusTotal','status':'not_configured','retrieved_at':None}]}
+        collection = 'ip_addresses' if kind == 'ip' else 'domains'
+        endpoint = f'https://www.virustotal.com/api/v3/{collection}/{quote(indicator,safe="")}/resolutions?limit=10'
+        result = self.requester(endpoint, headers={'x-apikey':self.vt_key})
+        if result['status'] != 'ok':
+            report = self.failure('VirusTotal', result)
+        else:
+            payload = result.get('data')
+            rows = payload.get('data') if isinstance(payload,dict) else None
+            if not isinstance(rows,list) or any(not isinstance(row,dict) for row in rows):
+                report = {'provider':'VirusTotal','status':'invalid_response','retrieved_at':result['retrieved_at']}
+            else:
+                selected=[]
+                for row in rows[:10]:
+                    attrs=row.get('attributes')
+                    if not isinstance(attrs,dict): continue
+                    selected.append({k:attrs[k] for k in ('date','host_name','ip_address','resolver') if k in attrs})
+                meta=payload.get('meta') if isinstance(payload.get('meta'),dict) else {}
+                report={'provider':'VirusTotal','status':'ok','retrieved_at':result['retrieved_at'],
+                        'records':selected,'provider_count':meta.get('count'),
+                        'bounded_to':10,'reference':f'https://www.virustotal.com/gui/{"ip-address" if kind=="ip" else "domain"}/{quote(indicator,safe="")}/relations'}
+        return {'status':'completed','kind':'resolutions','query':indicator,
+                'reports':[report],
+                'limitations':['Historical passive-DNS observations; no live DNS query is made.',
+                               'Ten records are a bounded sample, not complete infrastructure history.',
+                               'A shared IP or certificate does not establish common ownership.']}
+
     def vt_url(self, url):
         if not self.vt_key:
             return {'provider':'VirusTotal','status':'not_configured','retrieved_at':None}

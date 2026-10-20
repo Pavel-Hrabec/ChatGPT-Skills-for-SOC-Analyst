@@ -10,6 +10,7 @@ An optional read-only integration shared by the community skills. It retrieves e
 | `lookup_ip` | Existing VirusTotal and ThreatFox reports | Public/global address; provider API credentials |
 | `lookup_domain` | Existing VirusTotal and ThreatFox reports | Valid domain permitted for disclosure; provider API credentials |
 | `lookup_url` | Existing VirusTotal URL and URLhaus records, plus exact matches among recent urlscan.io host results | Public HTTP(S) URL without userinfo, query, fragment or unusual port; provider API credentials |
+| `lookup_resolutions` | Historical VirusTotal passive-DNS observations (up to ten) | Public IP or domain; `VT_API_KEY` |
 | `lookup_cve` | CISA KEV and FIRST EPSS | Exact CVE; public endpoints |
 
 ## Local setup
@@ -35,6 +36,7 @@ HTTPS destinations are fixed, redirects are disabled, timeouts are finite and re
 - [Official MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
 - [VirusTotal API](https://docs.virustotal.com/reference/overview)
 - [VirusTotal URL identifiers](https://docs.virustotal.com/reference/url)
+- [VirusTotal domain resolutions](https://docs.virustotal.com/reference/domain-object-resolutions)
 - [urlscan.io Search API](https://urlscan.io/docs/api/)
 - [URLhaus API](https://urlhaus-api.abuse.ch/)
 - [MalwareBazaar API](https://bazaar.abuse.ch/api/)
