@@ -1,8 +1,6 @@
 {
   "schema_version": 1,
   "total_skills": 150,
-  "preserved_skills": 44,
-  "new_skills": 106,
   "skills": [
     {
       "id": "aws-access-keys",
@@ -10,8 +8,7 @@
       "category": "aws",
       "purpose": "Investigate suspicious AWS access-key creation and use",
       "source": "skills/aws/aws-access-keys/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/aws-access-keys.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/aws-access-keys.zip"
     },
     {
       "id": "aws-cloudtrail",
@@ -19,8 +16,7 @@
       "category": "aws",
       "purpose": "Investigate CloudTrail visibility changes and suspicious control-plane sequences",
       "source": "skills/aws/aws-cloudtrail/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/aws-cloudtrail.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/aws-cloudtrail.zip"
     },
     {
       "id": "aws-ec2",
@@ -28,8 +24,7 @@
       "category": "aws",
       "purpose": "Investigate suspicious EC2 control-plane and instance activity",
       "source": "skills/aws/aws-ec2/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/aws-ec2.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/aws-ec2.zip"
     },
     {
       "id": "aws-iam",
@@ -37,8 +32,7 @@
       "category": "aws",
       "purpose": "Investigate IAM policy, trust and privilege changes",
       "source": "skills/aws/aws-iam/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/aws-iam.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/aws-iam.zip"
     },
     {
       "id": "aws-lambda",
@@ -46,8 +40,7 @@
       "category": "aws",
       "purpose": "Investigate suspicious Lambda code, configuration and invocation activity",
       "source": "skills/aws/aws-lambda/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/aws-lambda.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/aws-lambda.zip"
     },
     {
       "id": "aws-s3",
@@ -55,8 +48,7 @@
       "category": "aws",
       "purpose": "Investigate suspicious S3 object access and exposure",
       "source": "skills/aws/aws-s3/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/aws-s3.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/aws-s3.zip"
     },
     {
       "id": "aws-sso",
@@ -64,8 +56,7 @@
       "category": "aws",
       "purpose": "Investigate AWS federation and IAM Identity Center session activity",
       "source": "skills/aws/aws-sso/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/aws-sso.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/aws-sso.zip"
     },
     {
       "id": "azure-keyvault",
@@ -73,8 +64,7 @@
       "category": "azure",
       "purpose": "Investigate suspicious secret, key or certificate access in Key Vault",
       "source": "skills/azure/azure-keyvault/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/azure-keyvault.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/azure-keyvault.zip"
     },
     {
       "id": "azure-logging",
@@ -82,8 +72,7 @@
       "category": "azure",
       "purpose": "Investigate changes affecting Azure resource logging and visibility",
       "source": "skills/azure/azure-logging/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/azure-logging.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/azure-logging.zip"
     },
     {
       "id": "azure-roles",
@@ -91,8 +80,7 @@
       "category": "azure",
       "purpose": "Investigate Azure role assignments and privilege changes",
       "source": "skills/azure/azure-roles/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/azure-roles.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/azure-roles.zip"
     },
     {
       "id": "azure-storage",
@@ -100,8 +88,7 @@
       "category": "azure",
       "purpose": "Investigate suspicious Azure Storage access, sharing and token use",
       "source": "skills/azure/azure-storage/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/azure-storage.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/azure-storage.zip"
     },
     {
       "id": "azure-vm",
@@ -109,8 +96,7 @@
       "category": "azure",
       "purpose": "Investigate Azure VM remote execution and control-plane changes",
       "source": "skills/azure/azure-vm/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/azure-vm.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/azure-vm.zip"
     },
     {
       "id": "container-escape",
@@ -118,8 +104,7 @@
       "category": "containers",
       "purpose": "Assess evidence that a container crossed into host resources",
       "source": "skills/containers/container-escape/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/container-escape.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/container-escape.zip"
     },
     {
       "id": "container-images",
@@ -127,8 +112,7 @@
       "category": "containers",
       "purpose": "Investigate suspicious container image provenance and runtime use",
       "source": "skills/containers/container-images/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/container-images.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/container-images.zip"
     },
     {
       "id": "k8s-audit",
@@ -136,8 +120,7 @@
       "category": "containers",
       "purpose": "Reconstruct suspicious Kubernetes API activity from audit events",
       "source": "skills/containers/k8s-audit/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/k8s-audit.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/k8s-audit.zip"
     },
     {
       "id": "k8s-rbac",
@@ -145,8 +128,7 @@
       "category": "containers",
       "purpose": "Investigate Kubernetes role and binding changes",
       "source": "skills/containers/k8s-rbac/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/k8s-rbac.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/k8s-rbac.zip"
     },
     {
       "id": "pod-exec",
@@ -154,8 +136,7 @@
       "category": "containers",
       "purpose": "Investigate interactive execution into Kubernetes containers",
       "source": "skills/containers/pod-exec/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/pod-exec.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/pod-exec.zip"
     },
     {
       "id": "coverage-review",
@@ -163,8 +144,7 @@
       "category": "detection-engineering",
       "purpose": "Assess security detection coverage using actual telemetry and validation",
       "source": "skills/detection-engineering/coverage-review/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/coverage-review.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/coverage-review.zip"
     },
     {
       "id": "detection-replay",
@@ -172,8 +152,7 @@
       "category": "detection-engineering",
       "purpose": "Replay an existing detection against recorded telemetry in a controlled backend and compare expected events, entities and alert groups.",
       "source": "skills/detection-engineering/detection-replay/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/detection-replay.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/detection-replay.zip"
     },
     {
       "id": "detection-review",
@@ -181,8 +160,7 @@
       "category": "detection-engineering",
       "purpose": "Review detection logic. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/detection-engineering/detection-review/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/detection-review.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/detection-review.zip"
     },
     {
       "id": "duplicate-rules",
@@ -190,8 +168,7 @@
       "category": "detection-engineering",
       "purpose": "Identify overlapping detections without losing distinct coverage",
       "source": "skills/detection-engineering/duplicate-rules/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/duplicate-rules.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/duplicate-rules.zip"
     },
     {
       "id": "elastic-detection",
@@ -199,8 +176,7 @@
       "category": "detection-engineering",
       "purpose": "Author Elastic Security detections for a specified engine and schema",
       "source": "skills/detection-engineering/elastic-detection/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/elastic-detection.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/elastic-detection.zip"
     },
     {
       "id": "kql-detection",
@@ -208,8 +184,7 @@
       "category": "detection-engineering",
       "purpose": "Build operational KQL detections for Defender XDR or Microsoft Sentinel, including result identifiers, scheduling, entities and backend-aware tests.",
       "source": "skills/detection-engineering/kql-detection/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/kql-detection.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/kql-detection.zip"
     },
     {
       "id": "query-performance",
@@ -217,8 +192,7 @@
       "category": "detection-engineering",
       "purpose": "Improve security query performance while checking result equivalence",
       "source": "skills/detection-engineering/query-performance/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/query-performance.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/query-performance.zip"
     },
     {
       "id": "rule-migration",
@@ -226,8 +200,7 @@
       "category": "detection-engineering",
       "purpose": "Translate a detection between platforms while preserving its semantics",
       "source": "skills/detection-engineering/rule-migration/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/rule-migration.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/rule-migration.zip"
     },
     {
       "id": "rule-tests",
@@ -235,8 +208,7 @@
       "category": "detection-engineering",
       "purpose": "Create meaningful executable or backend-native tests for an existing security detection, with explicit expected matches and negative cases.",
       "source": "skills/detection-engineering/rule-tests/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/rule-tests.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/rule-tests.zip"
     },
     {
       "id": "rule-tuning",
@@ -244,8 +216,7 @@
       "category": "detection-engineering",
       "purpose": "Reduce noise in an existing detection using labeled evidence while measuring lost coverage, regression risk and exception scope.",
       "source": "skills/detection-engineering/rule-tuning/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/rule-tuning.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/rule-tuning.zip"
     },
     {
       "id": "sigma",
@@ -253,8 +224,7 @@
       "category": "detection-engineering",
       "purpose": "Author or convert Sigma detections from documented behavior and supplied telemetry, including backend mappings and validation requirements.",
       "source": "skills/detection-engineering/sigma/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/sigma.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/sigma.zip"
     },
     {
       "id": "sigma-yara",
@@ -262,8 +232,7 @@
       "category": "detection-engineering",
       "purpose": "Explain Sigma and YARA rules. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/detection-engineering/sigma-yara/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/sigma-yara.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/sigma-yara.zip"
     },
     {
       "id": "spl-detection",
@@ -271,8 +240,7 @@
       "category": "detection-engineering",
       "purpose": "Write Splunk SPL security detections with confirmed sourcetypes or CIM dependencies, operational search settings and controlled validation.",
       "source": "skills/detection-engineering/spl-detection/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/spl-detection.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/spl-detection.zip"
     },
     {
       "id": "suricata",
@@ -280,8 +248,7 @@
       "category": "detection-engineering",
       "purpose": "Author Suricata signatures for observable network behavior",
       "source": "skills/detection-engineering/suricata/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/suricata.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/suricata.zip"
     },
     {
       "id": "threat-coverage",
@@ -289,8 +256,7 @@
       "category": "detection-engineering",
       "purpose": "Assess defensive coverage against a specific reported threat sequence",
       "source": "skills/detection-engineering/threat-coverage/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/threat-coverage.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/threat-coverage.zip"
     },
     {
       "id": "yara",
@@ -298,8 +264,7 @@
       "category": "detection-engineering",
       "purpose": "Author and validate YARA rules for a defined file or memory target",
       "source": "skills/detection-engineering/yara/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/yara.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/yara.zip"
     },
     {
       "id": "email-analysis",
@@ -307,8 +272,7 @@
       "category": "email",
       "purpose": "Analyze suspicious email. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/email/email-analysis/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/email-analysis.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/email-analysis.zip"
     },
     {
       "id": "bits-jobs",
@@ -316,8 +280,7 @@
       "category": "endpoint",
       "purpose": "Investigate suspicious Background Intelligent Transfer Service jobs",
       "source": "skills/endpoint/bits-jobs/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/bits-jobs.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/bits-jobs.zip"
     },
     {
       "id": "browser-theft",
@@ -325,8 +288,7 @@
       "category": "endpoint",
       "purpose": "Investigate access to browser credential and session stores",
       "source": "skills/endpoint/browser-theft/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/browser-theft.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/browser-theft.zip"
     },
     {
       "id": "com-hijack",
@@ -334,8 +296,7 @@
       "category": "endpoint",
       "purpose": "Investigate COM registration changes that may redirect execution",
       "source": "skills/endpoint/com-hijack/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/com-hijack.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/com-hijack.zip"
     },
     {
       "id": "defender-tampering",
@@ -343,8 +304,7 @@
       "category": "endpoint",
       "purpose": "Investigate changes that impair Microsoft Defender or its visibility",
       "source": "skills/endpoint/defender-tampering/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/defender-tampering.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/defender-tampering.zip"
     },
     {
       "id": "dll-loading",
@@ -352,8 +312,7 @@
       "category": "endpoint",
       "purpose": "Assess suspicious DLL loading and potential side-loading",
       "source": "skills/endpoint/dll-loading/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/dll-loading.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/dll-loading.zip"
     },
     {
       "id": "driver-abuse",
@@ -361,8 +320,7 @@
       "category": "endpoint",
       "purpose": "Assess suspicious kernel driver loading and vulnerable-driver abuse",
       "source": "skills/endpoint/driver-abuse/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/driver-abuse.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/driver-abuse.zip"
     },
     {
       "id": "lsass",
@@ -370,8 +328,7 @@
       "category": "endpoint",
       "purpose": "Investigate suspected LSASS memory access and credential dumping",
       "source": "skills/endpoint/lsass/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/lsass.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/lsass.zip"
     },
     {
       "id": "named-pipes",
@@ -379,8 +336,7 @@
       "category": "endpoint",
       "purpose": "Investigate suspicious named-pipe creation and connections",
       "source": "skills/endpoint/named-pipes/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/named-pipes.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/named-pipes.zip"
     },
     {
       "id": "office-macros",
@@ -388,8 +344,7 @@
       "category": "endpoint",
       "purpose": "Inspect Office macro evidence. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/endpoint/office-macros/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/office-macros.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/office-macros.zip"
     },
     {
       "id": "powershell",
@@ -397,8 +352,7 @@
       "category": "endpoint",
       "purpose": "Analyze PowerShell evidence. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/endpoint/powershell/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/powershell.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/powershell.zip"
     },
     {
       "id": "process-tree",
@@ -406,8 +360,7 @@
       "category": "endpoint",
       "purpose": "Analyze a process tree. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/endpoint/process-tree/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/process-tree.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/process-tree.zip"
     },
     {
       "id": "registry",
@@ -415,8 +368,7 @@
       "category": "endpoint",
       "purpose": "Analyze registry changes. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/endpoint/registry/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/registry.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/registry.zip"
     },
     {
       "id": "remote-thread",
@@ -424,8 +376,7 @@
       "category": "endpoint",
       "purpose": "Investigate cross-process thread creation and injection hypotheses",
       "source": "skills/endpoint/remote-thread/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/remote-thread.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/remote-thread.zip"
     },
     {
       "id": "script-decode",
@@ -433,8 +384,7 @@
       "category": "endpoint",
       "purpose": "Decode suspicious script evidence. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/endpoint/script-decode/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/script-decode.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/script-decode.zip"
     },
     {
       "id": "shadow-copy",
@@ -442,8 +392,7 @@
       "category": "endpoint",
       "purpose": "Investigate deletion or disruption of backups and shadow copies",
       "source": "skills/endpoint/shadow-copy/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/shadow-copy.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/shadow-copy.zip"
     },
     {
       "id": "tasks-services",
@@ -451,8 +400,7 @@
       "category": "endpoint",
       "purpose": "Analyze scheduled tasks and services. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/endpoint/tasks-services/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/tasks-services.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/tasks-services.zip"
     },
     {
       "id": "windows-command",
@@ -460,8 +408,7 @@
       "category": "endpoint",
       "purpose": "Interpret Windows command lines. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/endpoint/windows-command/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/windows-command.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/windows-command.zip"
     },
     {
       "id": "windows-events",
@@ -469,8 +416,7 @@
       "category": "endpoint",
       "purpose": "Investigate Windows event records. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/endpoint/windows-events/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/windows-events.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/windows-events.zip"
     },
     {
       "id": "wmi-execution",
@@ -478,8 +424,7 @@
       "category": "endpoint",
       "purpose": "Investigate remote or local process execution through WMI",
       "source": "skills/endpoint/wmi-execution/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/wmi-execution.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/wmi-execution.zip"
     },
     {
       "id": "wmi-persistence",
@@ -487,8 +432,7 @@
       "category": "endpoint",
       "purpose": "Investigate permanent WMI event subscriptions and their execution evidence",
       "source": "skills/endpoint/wmi-persistence/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/wmi-persistence.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/wmi-persistence.zip"
     },
     {
       "id": "gcp-audit",
@@ -496,8 +440,7 @@
       "category": "gcp",
       "purpose": "Investigate Google Cloud audit sequences and logging gaps",
       "source": "skills/gcp/gcp-audit/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/gcp-audit.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/gcp-audit.zip"
     },
     {
       "id": "gcp-compute",
@@ -505,8 +448,7 @@
       "category": "gcp",
       "purpose": "Investigate suspicious Compute Engine instance and access changes",
       "source": "skills/gcp/gcp-compute/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/gcp-compute.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/gcp-compute.zip"
     },
     {
       "id": "gcp-iam",
@@ -514,8 +456,7 @@
       "category": "gcp",
       "purpose": "Investigate Google Cloud IAM policy and privilege changes",
       "source": "skills/gcp/gcp-iam/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/gcp-iam.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/gcp-iam.zip"
     },
     {
       "id": "gcp-service-accounts",
@@ -523,8 +464,7 @@
       "category": "gcp",
       "purpose": "Investigate service-account keys, impersonation and workload identity use",
       "source": "skills/gcp/gcp-service-accounts/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/gcp-service-accounts.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/gcp-service-accounts.zip"
     },
     {
       "id": "gcp-storage",
@@ -532,8 +472,7 @@
       "category": "gcp",
       "purpose": "Investigate suspicious Cloud Storage access and exposure",
       "source": "skills/gcp/gcp-storage/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/gcp-storage.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/gcp-storage.zip"
     },
     {
       "id": "ad-changes",
@@ -541,8 +480,7 @@
       "category": "identity",
       "purpose": "Review Active Directory changes. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/identity/ad-changes/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/ad-changes.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/ad-changes.zip"
     },
     {
       "id": "adcs",
@@ -550,8 +488,7 @@
       "category": "identity",
       "purpose": "Investigate suspicious Active Directory certificate issuance and template changes",
       "source": "skills/identity/adcs/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/adcs.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/adcs.zip"
     },
     {
       "id": "asrep-roasting",
@@ -559,8 +496,7 @@
       "category": "identity",
       "purpose": "Investigate authentication requests involving accounts without Kerberos preauthentication",
       "source": "skills/identity/asrep-roasting/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/asrep-roasting.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/asrep-roasting.zip"
     },
     {
       "id": "dcshadow",
@@ -568,8 +504,7 @@
       "category": "identity",
       "purpose": "Investigate suspicious directory replication registration and object changes",
       "source": "skills/identity/dcshadow/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/dcshadow.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/dcshadow.zip"
     },
     {
       "id": "dcsync",
@@ -577,8 +512,7 @@
       "category": "identity",
       "purpose": "Investigate directory replication requests from unexpected principals or hosts",
       "source": "skills/identity/dcsync/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/dcsync.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/dcsync.zip"
     },
     {
       "id": "delegation-abuse",
@@ -586,8 +520,7 @@
       "category": "identity",
       "purpose": "Investigate changes or use of Kerberos delegation relationships",
       "source": "skills/identity/delegation-abuse/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/delegation-abuse.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/delegation-abuse.zip"
     },
     {
       "id": "golden-ticket",
@@ -595,8 +528,7 @@
       "category": "identity",
       "purpose": "Assess forged Kerberos ticket hypotheses using corroborated authentication evidence",
       "source": "skills/identity/golden-ticket/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/golden-ticket.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/golden-ticket.zip"
     },
     {
       "id": "gpo-abuse",
@@ -604,8 +536,7 @@
       "category": "identity",
       "purpose": "Investigate unauthorized Group Policy changes and resulting endpoint behavior",
       "source": "skills/identity/gpo-abuse/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/gpo-abuse.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/gpo-abuse.zip"
     },
     {
       "id": "kerberoasting",
@@ -613,8 +544,7 @@
       "category": "identity",
       "purpose": "Investigate suspicious Kerberos service-ticket requests",
       "source": "skills/identity/kerberoasting/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/kerberoasting.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/kerberoasting.zip"
     },
     {
       "id": "kerberos",
@@ -622,8 +552,7 @@
       "category": "identity",
       "purpose": "Investigate Kerberos events. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/identity/kerberos/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/kerberos.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/kerberos.zip"
     },
     {
       "id": "ldap",
@@ -631,8 +560,7 @@
       "category": "identity",
       "purpose": "Analyze LDAP activity. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/identity/ldap/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/ldap.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/ldap.zip"
     },
     {
       "id": "ntlm-relay",
@@ -640,8 +568,7 @@
       "category": "identity",
       "purpose": "Investigate suspected relayed NTLM authentication",
       "source": "skills/identity/ntlm-relay/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/ntlm-relay.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/ntlm-relay.zip"
     },
     {
       "id": "password-spray",
@@ -649,8 +576,7 @@
       "category": "identity",
       "purpose": "Investigate low-frequency authentication attempts spread across accounts",
       "source": "skills/identity/password-spray/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/password-spray.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/password-spray.zip"
     },
     {
       "id": "privileged-access",
@@ -658,8 +584,7 @@
       "category": "identity",
       "purpose": "Review privileged access. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/identity/privileged-access/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/privileged-access.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/privileged-access.zip"
     },
     {
       "id": "sign-in",
@@ -667,8 +592,7 @@
       "category": "identity",
       "purpose": "Investigate sign-in anomalies. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/identity/sign-in/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/sign-in.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/sign-in.zip"
     },
     {
       "id": "containment-plan",
@@ -676,8 +600,7 @@
       "category": "incident-response",
       "purpose": "Develop a scoped containment plan from confirmed incident evidence",
       "source": "skills/incident-response/containment-plan/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/containment-plan.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/containment-plan.zip"
     },
     {
       "id": "escalation",
@@ -685,8 +608,7 @@
       "category": "incident-response",
       "purpose": "Write an incident escalation. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/incident-response/escalation/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/escalation.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/escalation.zip"
     },
     {
       "id": "evidence-preservation",
@@ -694,8 +616,7 @@
       "category": "incident-response",
       "purpose": "Plan and document defensible preservation of security evidence",
       "source": "skills/incident-response/evidence-preservation/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/evidence-preservation.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/evidence-preservation.zip"
     },
     {
       "id": "incident-report",
@@ -703,8 +624,7 @@
       "category": "incident-response",
       "purpose": "Draft an incident report. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/incident-response/incident-report/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/incident-report.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/incident-report.zip"
     },
     {
       "id": "incident-scope",
@@ -712,8 +632,7 @@
       "category": "incident-response",
       "purpose": "Expand incident scope safely. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/incident-response/incident-scope/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/incident-scope.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/incident-scope.zip"
     },
     {
       "id": "recovery-review",
@@ -721,8 +640,7 @@
       "category": "incident-response",
       "purpose": "Review whether recovery evidence supports safe restoration and monitoring",
       "source": "skills/incident-response/recovery-review/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/recovery-review.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/recovery-review.zip"
     },
     {
       "id": "timeline",
@@ -730,8 +648,7 @@
       "category": "incident-response",
       "purpose": "Build an incident timeline. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/incident-response/timeline/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/timeline.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/timeline.zip"
     },
     {
       "id": "xdr-alert",
@@ -739,8 +656,7 @@
       "category": "incident-response",
       "purpose": "Interpret an XDR alert. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/incident-response/xdr-alert/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/xdr-alert.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/xdr-alert.zip"
     },
     {
       "id": "cron",
@@ -748,8 +664,7 @@
       "category": "linux",
       "purpose": "Investigate suspicious cron-based execution and persistence",
       "source": "skills/linux/cron/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/cron.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/cron.zip"
     },
     {
       "id": "ld-preload",
@@ -757,8 +672,7 @@
       "category": "linux",
       "purpose": "Investigate dynamic-loader configuration that may inject shared libraries",
       "source": "skills/linux/ld-preload/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/ld-preload.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/ld-preload.zip"
     },
     {
       "id": "linux-audit",
@@ -766,8 +680,7 @@
       "category": "linux",
       "purpose": "Reconstruct security-relevant activity from Linux audit records",
       "source": "skills/linux/linux-audit/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/linux-audit.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/linux-audit.zip"
     },
     {
       "id": "linux-log-tampering",
@@ -775,8 +688,7 @@
       "category": "linux",
       "purpose": "Investigate disruption or manipulation of Linux security logging",
       "source": "skills/linux/linux-log-tampering/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/linux-log-tampering.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/linux-log-tampering.zip"
     },
     {
       "id": "ssh",
@@ -784,8 +696,7 @@
       "category": "linux",
       "purpose": "Investigate suspicious SSH authentication and session activity",
       "source": "skills/linux/ssh/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/ssh.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/ssh.zip"
     },
     {
       "id": "ssh-keys",
@@ -793,8 +704,7 @@
       "category": "linux",
       "purpose": "Investigate unauthorized SSH key and trust configuration changes",
       "source": "skills/linux/ssh-keys/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/ssh-keys.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/ssh-keys.zip"
     },
     {
       "id": "sudo",
@@ -802,8 +712,7 @@
       "category": "linux",
       "purpose": "Investigate privilege changes through sudo",
       "source": "skills/linux/sudo/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/sudo.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/sudo.zip"
     },
     {
       "id": "systemd",
@@ -811,8 +720,7 @@
       "category": "linux",
       "purpose": "Investigate suspicious systemd units, timers and drop-ins",
       "source": "skills/linux/systemd/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/systemd.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/systemd.zip"
     },
     {
       "id": "archive-analysis",
@@ -820,8 +728,7 @@
       "category": "malware-forensics",
       "purpose": "Assess archive contents and delivery risks without executing members",
       "source": "skills/malware-forensics/archive-analysis/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/archive-analysis.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/archive-analysis.zip"
     },
     {
       "id": "browser-artifacts",
@@ -829,8 +736,7 @@
       "category": "malware-forensics",
       "purpose": "Investigate browser history, downloads and profile artifacts",
       "source": "skills/malware-forensics/browser-artifacts/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/browser-artifacts.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/browser-artifacts.zip"
     },
     {
       "id": "disk-artifacts",
@@ -838,8 +744,7 @@
       "category": "malware-forensics",
       "purpose": "Correlate filesystem forensic artifacts into an activity hypothesis",
       "source": "skills/malware-forensics/disk-artifacts/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/disk-artifacts.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/disk-artifacts.zip"
     },
     {
       "id": "lnk-analysis",
@@ -847,8 +752,7 @@
       "category": "malware-forensics",
       "purpose": "Analyze Windows shortcut artifacts without opening their targets",
       "source": "skills/malware-forensics/lnk-analysis/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/lnk-analysis.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/lnk-analysis.zip"
     },
     {
       "id": "memory-analysis",
@@ -856,8 +760,7 @@
       "category": "malware-forensics",
       "purpose": "Interpret memory forensic output for suspicious processes and artifacts",
       "source": "skills/malware-forensics/memory-analysis/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/memory-analysis.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/memory-analysis.zip"
     },
     {
       "id": "pe-analysis",
@@ -865,8 +768,7 @@
       "category": "malware-forensics",
       "purpose": "Perform static triage of Windows PE files or supplied parser output",
       "source": "skills/malware-forensics/pe-analysis/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/pe-analysis.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/pe-analysis.zip"
     },
     {
       "id": "ransomware",
@@ -874,8 +776,7 @@
       "category": "malware-forensics",
       "purpose": "Investigate ransomware behavior and impact from correlated evidence",
       "source": "skills/malware-forensics/ransomware/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/ransomware.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/ransomware.zip"
     },
     {
       "id": "conditional-access",
@@ -883,8 +784,7 @@
       "category": "microsoft-365",
       "purpose": "Investigate Conditional Access changes and unexpected access outcomes",
       "source": "skills/microsoft-365/conditional-access/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/conditional-access.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/conditional-access.zip"
     },
     {
       "id": "entra-apps",
@@ -892,8 +792,7 @@
       "category": "microsoft-365",
       "purpose": "Investigate application and service-principal credential changes",
       "source": "skills/microsoft-365/entra-apps/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/entra-apps.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/entra-apps.zip"
     },
     {
       "id": "inbox-rules",
@@ -901,8 +800,7 @@
       "category": "microsoft-365",
       "purpose": "Investigate mailbox rules that conceal or redirect messages",
       "source": "skills/microsoft-365/inbox-rules/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/inbox-rules.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/inbox-rules.zip"
     },
     {
       "id": "mailbox-access",
@@ -910,8 +808,7 @@
       "category": "microsoft-365",
       "purpose": "Investigate anomalous mailbox content access",
       "source": "skills/microsoft-365/mailbox-access/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/mailbox-access.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/mailbox-access.zip"
     },
     {
       "id": "mfa-fatigue",
@@ -919,8 +816,7 @@
       "category": "microsoft-365",
       "purpose": "Investigate repeated MFA prompts and a possibly coerced approval",
       "source": "skills/microsoft-365/mfa-fatigue/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/mfa-fatigue.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/mfa-fatigue.zip"
     },
     {
       "id": "oauth-grants",
@@ -928,8 +824,7 @@
       "category": "microsoft-365",
       "purpose": "Investigate suspicious application consent and delegated access",
       "source": "skills/microsoft-365/oauth-grants/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/oauth-grants.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/oauth-grants.zip"
     },
     {
       "id": "sharepoint-access",
@@ -937,8 +832,7 @@
       "category": "microsoft-365",
       "purpose": "Investigate suspicious SharePoint and OneDrive access or sharing",
       "source": "skills/microsoft-365/sharepoint-access/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/sharepoint-access.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/sharepoint-access.zip"
     },
     {
       "id": "teams-abuse",
@@ -946,8 +840,7 @@
       "category": "microsoft-365",
       "purpose": "Investigate suspicious Teams collaboration or application activity",
       "source": "skills/microsoft-365/teams-abuse/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/teams-abuse.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/teams-abuse.zip"
     },
     {
       "id": "token-theft",
@@ -955,8 +848,7 @@
       "category": "microsoft-365",
       "purpose": "Investigate suspicious reuse of cloud sessions or tokens",
       "source": "skills/microsoft-365/token-theft/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/token-theft.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/token-theft.zip"
     },
     {
       "id": "beaconing",
@@ -964,8 +856,7 @@
       "category": "network",
       "purpose": "Investigate periodic outbound communication and command-and-control hypotheses",
       "source": "skills/network/beaconing/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/beaconing.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/beaconing.zip"
     },
     {
       "id": "data-exfiltration",
@@ -973,8 +864,7 @@
       "category": "network",
       "purpose": "Investigate suspected outbound data transfer",
       "source": "skills/network/data-exfiltration/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/data-exfiltration.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/data-exfiltration.zip"
     },
     {
       "id": "dns",
@@ -982,8 +872,7 @@
       "category": "network",
       "purpose": "Analyze DNS events. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/network/dns/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/dns.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/dns.zip"
     },
     {
       "id": "dns-tunneling",
@@ -991,8 +880,7 @@
       "category": "network",
       "purpose": "Investigate DNS traffic that may carry a covert channel",
       "source": "skills/network/dns-tunneling/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/dns-tunneling.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/dns-tunneling.zip"
     },
     {
       "id": "network-flow",
@@ -1000,8 +888,7 @@
       "category": "network",
       "purpose": "Analyze network flows. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/network/network-flow/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/network-flow.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/network-flow.zip"
     },
     {
       "id": "pcap-summary",
@@ -1009,8 +896,7 @@
       "category": "network",
       "purpose": "Interpret packet-analysis summaries. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/network/pcap-summary/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/pcap-summary.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/pcap-summary.zip"
     },
     {
       "id": "proxy-url",
@@ -1018,8 +904,7 @@
       "category": "network",
       "purpose": "Review proxy and URL events. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/network/proxy-url/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/proxy-url.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/proxy-url.zip"
     },
     {
       "id": "rdp-lateral",
@@ -1027,8 +912,7 @@
       "category": "network",
       "purpose": "Investigate suspicious Remote Desktop sessions",
       "source": "skills/network/rdp-lateral/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/rdp-lateral.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/rdp-lateral.zip"
     },
     {
       "id": "smb-lateral",
@@ -1036,8 +920,7 @@
       "category": "network",
       "purpose": "Investigate suspicious SMB-based movement between hosts",
       "source": "skills/network/smb-lateral/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/smb-lateral.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/smb-lateral.zip"
     },
     {
       "id": "tls-analysis",
@@ -1045,8 +928,7 @@
       "category": "network",
       "purpose": "Assess suspicious TLS metadata and certificate relationships",
       "source": "skills/network/tls-analysis/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/tls-analysis.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/tls-analysis.zip"
     },
     {
       "id": "web-attacks",
@@ -1054,8 +936,7 @@
       "category": "network",
       "purpose": "Investigate suspected exploitation attempts in HTTP or WAF evidence",
       "source": "skills/network/web-attacks/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/web-attacks.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/web-attacks.zip"
     },
     {
       "id": "winrm-lateral",
@@ -1063,8 +944,7 @@
       "category": "network",
       "purpose": "Investigate remote management execution through WinRM",
       "source": "skills/network/winrm-lateral/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/winrm-lateral.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/winrm-lateral.zip"
     },
     {
       "id": "cicd-abuse",
@@ -1072,8 +952,7 @@
       "category": "saas-development",
       "purpose": "Investigate suspicious workflow modifications and build execution",
       "source": "skills/saas-development/cicd-abuse/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/cicd-abuse.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/cicd-abuse.zip"
     },
     {
       "id": "github-audit",
@@ -1081,8 +960,7 @@
       "category": "saas-development",
       "purpose": "Investigate suspicious GitHub organization and repository activity",
       "source": "skills/saas-development/github-audit/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/github-audit.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/github-audit.zip"
     },
     {
       "id": "prompt-injection",
@@ -1090,8 +968,7 @@
       "category": "saas-development",
       "purpose": "Investigate untrusted content that attempts to redirect an AI security workflow",
       "source": "skills/saas-development/prompt-injection/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/prompt-injection.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/prompt-injection.zip"
     },
     {
       "id": "secret-exposure",
@@ -1099,8 +976,7 @@
       "category": "saas-development",
       "purpose": "Assess exposed credentials without disclosing or using them",
       "source": "skills/saas-development/secret-exposure/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/secret-exposure.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/secret-exposure.zip"
     },
     {
       "id": "alert-routing",
@@ -1108,8 +984,7 @@
       "category": "security-automation",
       "purpose": "Design routing and deduplication for security alerts",
       "source": "skills/security-automation/alert-routing/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/alert-routing.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/alert-routing.zip"
     },
     {
       "id": "api-integration",
@@ -1117,8 +992,7 @@
       "category": "security-automation",
       "purpose": "Implement an authenticated security API integration with bounded operations",
       "source": "skills/security-automation/api-integration/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/api-integration.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/api-integration.zip"
     },
     {
       "id": "enrichment-pipeline",
@@ -1126,8 +1000,7 @@
       "category": "security-automation",
       "purpose": "Build a bounded intelligence enrichment workflow with provenance",
       "source": "skills/security-automation/enrichment-pipeline/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/enrichment-pipeline.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/enrichment-pipeline.zip"
     },
     {
       "id": "soar-playbook",
@@ -1135,8 +1008,7 @@
       "category": "security-automation",
       "purpose": "Design a reviewable automation playbook for a defined security workflow",
       "source": "skills/security-automation/soar-playbook/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/soar-playbook.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/soar-playbook.zip"
     },
     {
       "id": "esql",
@@ -1144,8 +1016,7 @@
       "category": "siem",
       "purpose": "Draft and explain ES|QL. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/siem/esql/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/esql.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/esql.zip"
     },
     {
       "id": "kql",
@@ -1153,8 +1024,7 @@
       "category": "siem",
       "purpose": "Draft and explain KQL. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/siem/kql/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/kql.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/kql.zip"
     },
     {
       "id": "query-results",
@@ -1162,8 +1032,7 @@
       "category": "siem",
       "purpose": "Interpret SIEM query results. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/siem/query-results/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/query-results.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/query-results.zip"
     },
     {
       "id": "field-mapping",
@@ -1171,8 +1040,7 @@
       "category": "telemetry-engineering",
       "purpose": "Map vendor security telemetry to a specified ECS, OCSF or local schema using field semantics, types, transformations and explicit unmapped values.",
       "source": "skills/telemetry-engineering/field-mapping/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/field-mapping.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/field-mapping.zip"
     },
     {
       "id": "log-parser",
@@ -1180,8 +1048,7 @@
       "category": "telemetry-engineering",
       "purpose": "Build or repair parsers for supplied security logs, preserving raw evidence and handling timestamps, framing, escapes and malformed records.",
       "source": "skills/telemetry-engineering/log-parser/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/log-parser.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/log-parser.zip"
     },
     {
       "id": "log-quality",
@@ -1189,8 +1056,7 @@
       "category": "telemetry-engineering",
       "purpose": "Assess security log completeness, parsing, timestamps, duplicate candidates and ingestion delay from supplied records or bounded authorized queries.",
       "source": "skills/telemetry-engineering/log-quality/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/log-quality.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/log-quality.zip"
     },
     {
       "id": "campaign-review",
@@ -1198,8 +1064,7 @@
       "category": "threat-intelligence",
       "purpose": "Evaluate whether observed incident evidence matches a reported campaign",
       "source": "skills/threat-intelligence/campaign-review/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/campaign-review.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/campaign-review.zip"
     },
     {
       "id": "hash-analysis",
@@ -1207,8 +1072,7 @@
       "category": "threat-intelligence",
       "purpose": "Review file-hash evidence. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/threat-intelligence/hash-analysis/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/hash-analysis.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/hash-analysis.zip"
     },
     {
       "id": "indicator-expiry",
@@ -1216,8 +1080,7 @@
       "category": "threat-intelligence",
       "purpose": "Propose evidence-based indicator retention and review policies",
       "source": "skills/threat-intelligence/indicator-expiry/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/indicator-expiry.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/indicator-expiry.zip"
     },
     {
       "id": "infrastructure-links",
@@ -1225,8 +1088,7 @@
       "category": "threat-intelligence",
       "purpose": "Assess relationships among suspicious domains, IPs and certificates",
       "source": "skills/threat-intelligence/infrastructure-links/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/infrastructure-links.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/infrastructure-links.zip"
     },
     {
       "id": "intel-dedup",
@@ -1234,8 +1096,7 @@
       "category": "threat-intelligence",
       "purpose": "Deduplicate intelligence while preserving distinct observations and source lineage",
       "source": "skills/threat-intelligence/intel-dedup/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/intel-dedup.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/intel-dedup.zip"
     },
     {
       "id": "intel-to-hunt",
@@ -1243,8 +1104,7 @@
       "category": "threat-intelligence",
       "purpose": "Translate a threat report into testable defensive hunt hypotheses",
       "source": "skills/threat-intelligence/intel-to-hunt/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/intel-to-hunt.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/intel-to-hunt.zip"
     },
     {
       "id": "ioc-analysis",
@@ -1252,8 +1112,7 @@
       "category": "threat-intelligence",
       "purpose": "Analyze indicators of compromise. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/threat-intelligence/ioc-analysis/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/ioc-analysis.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/ioc-analysis.zip"
     },
     {
       "id": "sandbox-report",
@@ -1261,8 +1120,7 @@
       "category": "threat-intelligence",
       "purpose": "Interpret malware sandbox reports. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/threat-intelligence/sandbox-report/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/sandbox-report.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/sandbox-report.zip"
     },
     {
       "id": "stix-review",
@@ -1270,8 +1128,7 @@
       "category": "threat-intelligence",
       "purpose": "Review STIX intelligence objects and relationships for semantic validity",
       "source": "skills/threat-intelligence/stix-review/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/stix-review.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/stix-review.zip"
     },
     {
       "id": "feed-quality",
@@ -1279,8 +1136,7 @@
       "category": "threat-intelligence-engineering",
       "purpose": "Evaluate threat intelligence feed quality through indicator validity, provenance, observation age, duplication, confidence semantics and sharing restrictions.",
       "source": "skills/threat-intelligence-engineering/feed-quality/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/feed-quality.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/feed-quality.zip"
     },
     {
       "id": "cve-review",
@@ -1288,8 +1144,7 @@
       "category": "vulnerability-management",
       "purpose": "Assess a CVE's applicability and investigation relevance",
       "source": "skills/vulnerability-management/cve-review/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/cve-review.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/cve-review.zip"
     },
     {
       "id": "exposure-review",
@@ -1297,8 +1152,7 @@
       "category": "vulnerability-management",
       "purpose": "Review whether a vulnerable service is reachable in its actual environment",
       "source": "skills/vulnerability-management/exposure-review/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/exposure-review.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/exposure-review.zip"
     },
     {
       "id": "patch-priority",
@@ -1306,8 +1160,7 @@
       "category": "vulnerability-management",
       "purpose": "Prioritize remediation using exploitation evidence and asset context",
       "source": "skills/vulnerability-management/patch-priority/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/patch-priority.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/patch-priority.zip"
     },
     {
       "id": "remediation-review",
@@ -1315,8 +1168,7 @@
       "category": "vulnerability-management",
       "purpose": "Verify remediation evidence and detect incomplete fixes",
       "source": "skills/vulnerability-management/remediation-review/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/remediation-review.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/remediation-review.zip"
     },
     {
       "id": "scan-alert",
@@ -1324,8 +1176,7 @@
       "category": "vulnerability-management",
       "purpose": "Analyze port-scan alerts. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/vulnerability-management/scan-alert/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/scan-alert.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/scan-alert.zip"
     },
     {
       "id": "scan-results",
@@ -1333,8 +1184,7 @@
       "category": "vulnerability-management",
       "purpose": "Review vulnerability scan results. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/vulnerability-management/scan-results/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/scan-results.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/scan-results.zip"
     },
     {
       "id": "scan-scope",
@@ -1342,8 +1192,7 @@
       "category": "vulnerability-management",
       "purpose": "Plan an authorized scan scope. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool.",
       "source": "skills/vulnerability-management/scan-scope/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/scan-scope.zip",
-      "release_status": "preserved-original"
+      "chatgpt_zip": "dist/chatgpt/scan-scope.zip"
     },
     {
       "id": "vulnerability-validation",
@@ -1351,8 +1200,7 @@
       "category": "vulnerability-management",
       "purpose": "Validate scanner findings through version and configuration evidence",
       "source": "skills/vulnerability-management/vulnerability-validation/SKILL.md",
-      "chatgpt_zip": "dist/chatgpt/vulnerability-validation.zip",
-      "release_status": "new-reference-reviewed"
+      "chatgpt_zip": "dist/chatgpt/vulnerability-validation.zip"
     }
   ]
 }

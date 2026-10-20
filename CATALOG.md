@@ -1,6 +1,6 @@
 # Community Skill Catalog
 
-150 skills: the original 44 are retained and 106 are new. Each upload contains one self-contained skill. Individual packages can be downloaded from `dist/chatgpt/`.
+150 focused skills across security operations and engineering. Each upload contains one self-contained skill. Individual packages can be downloaded from `dist/chatgpt/`.
 
 ## AWS
 
