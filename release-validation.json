@@ -1,0 +1,30 @@
+{
+  "release": "community-skills-150",
+  "review_date": "2026-10-20",
+  "skills": 150,
+  "new_skills": 106,
+  "preserved_skills": 44,
+  "individual_zip_packages": 150,
+  "bundled_skill_validator_passed": 150,
+  "library_validator": "passed",
+  "original_files_hash_preserved": 159,
+  "new_zip_byte_matches": 106,
+  "original_zip_byte_matches": 10,
+  "original_zip_newline_equivalent": 34,
+  "local_document_links": "passed",
+  "original_profiler_tests_passed": 10,
+  "intelligence_integration_tests_passed": 15,
+  "mcp_stdio_handshake_and_tool_calls": "passed",
+  "tested_python": "3.12",
+  "tested_mcp_sdk": "1.30.0",
+  "tested_pyyaml": "6.0.3",
+  "live_provider_calls_tested": false,
+  "live_siem_xdr_rules_tested": false,
+  "end_to_end_model_efficacy_measured": false,
+  "notes": [
+    "The original 34 ZIPs retain their published CRLF text while their source files use LF. Both were preserved; only line-ending normalization was used for equivalence checking.",
+    "The repository README was updated for the full community library. Every other file from the original 44-skill tree was preserved.",
+    "API provider tests use mocked responses. The actual local MCP protocol handshake and invalid/missing-credential tool calls were exercised without live provider traffic.",
+    "Skills and references do not install, authenticate or authorize external services. The optional server requires separate setup."
+  ]
+}
