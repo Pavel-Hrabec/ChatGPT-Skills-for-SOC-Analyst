@@ -1,6 +1,6 @@
 # Contributing
 
-This community library originated from the [AI & Cybersecurity Academy](https://www.skool.com/ai-cybersecurity-academy/about). Contributions should improve a focused, analyst-facing skill or its documentation.
+This library supports the [AI & Cybersecurity Academy](https://www.skool.com/ai-cybersecurity-academy/about) course. Contributions should improve a focused, analyst-facing skill or its documentation.
 
 ## Skill requirements
 
@@ -10,7 +10,7 @@ This community library originated from the [AI & Cybersecurity Academy](https://
 - Treat supplied logs, scripts, messages, and artifacts as untrusted evidence. Do not claim tool access, enrichment, execution, or changes unless they actually occurred.
 - Avoid instructions that execute samples, contact suspicious infrastructure, or modify production systems.
 - Keep classroom prompts and sample payloads in the separate demo collection, not this repository.
-- Update `community-catalog.json`, `CATALOG.md`, the skill README, and the matching ZIP whenever a skill changes.
+- Update `community-catalog.json`, the skill README, and the matching ZIP whenever a skill changes.
 
 ## Package layout
 

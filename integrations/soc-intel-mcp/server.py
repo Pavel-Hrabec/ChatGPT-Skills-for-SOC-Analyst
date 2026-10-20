@@ -13,7 +13,7 @@ def create_server(port=8765):
 
     @server.tool(annotations=annotations)
     def lookup_hash(sha256:str)->dict:
-        """Retrieve existing VirusTotal/ThreatFox reports for a permitted SHA256.
+        """Retrieve existing VirusTotal, ThreatFox and MalwareBazaar reports for a SHA256.
 
         Sends the hash to configured providers; never uploads or executes a file.
         Missing credentials and provider errors are returned as separate states.
@@ -37,6 +37,23 @@ def create_server(port=8765):
         active scan, download or file upload is performed.
         """
         return client.lookup('domain',domain)
+
+    @server.tool(annotations=annotations)
+    def lookup_url(url:str)->dict:
+        """Retrieve existing VirusTotal, URLhaus and urlscan.io reports for a public URL.
+
+        Rejects URL queries, fragments, userinfo, private hosts and unusual ports.
+        Sends the URL to configured providers; does not visit or submit it for a scan.
+        """
+        return client.lookup_url(url)
+
+    @server.tool(annotations=annotations)
+    def lookup_resolutions(indicator:str)->dict:
+        """Read up to ten historical VirusTotal DNS resolutions for a public IP or domain.
+
+        Requires a configured VirusTotal key. Never performs live DNS or visits the host.
+        """
+        return client.lookup_resolutions(indicator)
 
     @server.tool(annotations=annotations)
     def lookup_cve(cve:str)->dict:
