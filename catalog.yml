@@ -1,0 +1,207 @@
+version: 1
+academy: https://www.skool.com/ai-cybersecurity-academy/about
+skills:
+  - id: office-macros
+    name: "Inspect Office macro evidence"
+    category: endpoint
+    source: skills/endpoint/office-macros/SKILL.md
+    chatgpt_zip: dist/chatgpt/office-macros.zip
+    purpose: "Static source or scanner output, auto-run entrypoints, file/network/process behavior; never execute."
+  - id: powershell
+    name: "Analyze PowerShell evidence"
+    category: endpoint
+    source: skills/endpoint/powershell/SKILL.md
+    chatgpt_zip: dist/chatgpt/powershell.zip
+    purpose: "Event logs, encoded content supplied by user, behavior explanation, corroborating telemetry."
+  - id: process-tree
+    name: "Analyze a process tree"
+    category: endpoint
+    source: skills/endpoint/process-tree/SKILL.md
+    chatgpt_zip: dist/chatgpt/process-tree.zip
+    purpose: "Parent-child relationships, signer, user, command line, timing, network child processes."
+  - id: registry
+    name: "Analyze registry changes"
+    category: endpoint
+    source: skills/endpoint/registry/SKILL.md
+    chatgpt_zip: dist/chatgpt/registry.zip
+    purpose: "Changed key/value, process and user context, persistence or configuration hypotheses."
+  - id: script-decode
+    name: "Decode suspicious script evidence"
+    category: endpoint
+    source: skills/endpoint/script-decode/SKILL.md
+    chatgpt_zip: dist/chatgpt/script-decode.zip
+    purpose: "Identify encoding/obfuscation, safely decode supplied text, explain behavior without execution."
+  - id: tasks-services
+    name: "Analyze scheduled tasks and services"
+    category: endpoint
+    source: skills/endpoint/tasks-services/SKILL.md
+    chatgpt_zip: dist/chatgpt/tasks-services.zip
+    purpose: "Creator, task/service path, trigger, signer, account, host and timeline context."
+  - id: windows-command
+    name: "Interpret Windows command lines"
+    category: endpoint
+    source: skills/endpoint/windows-command/SKILL.md
+    chatgpt_zip: dist/chatgpt/windows-command.zip
+    purpose: "Command purpose, parent process, user context, suspicious flags, corroboration."
+  - id: windows-events
+    name: "Investigate Windows event records"
+    category: endpoint
+    source: skills/endpoint/windows-events/SKILL.md
+    chatgpt_zip: dist/chatgpt/windows-events.zip
+    purpose: "Event ids, log source, identity, time, host, sequence and limitations."
+  - id: ad-changes
+    name: "Review Active Directory changes"
+    category: identity
+    source: skills/identity/ad-changes/SKILL.md
+    chatgpt_zip: dist/chatgpt/ad-changes.zip
+    purpose: "Account/group/policy changes, actor, target, authorization and surrounding activity."
+  - id: kerberos
+    name: "Investigate Kerberos events"
+    category: identity
+    source: skills/identity/kerberos/SKILL.md
+    chatgpt_zip: dist/chatgpt/kerberos.zip
+    purpose: "Ticket request patterns, service accounts, encryption fields, source hosts and context."
+  - id: ldap
+    name: "Analyze LDAP activity"
+    category: identity
+    source: skills/identity/ldap/SKILL.md
+    chatgpt_zip: dist/chatgpt/ldap.zip
+    purpose: "Directory query source, account, target scope, volume, timing, baseline and related events."
+  - id: privileged-access
+    name: "Review privileged access"
+    category: identity
+    source: skills/identity/privileged-access/SKILL.md
+    chatgpt_zip: dist/chatgpt/privileged-access.zip
+    purpose: "Role assignment, elevation, actor, approval, scope, duration and audit trail."
+  - id: sign-in
+    name: "Investigate sign-in anomalies"
+    category: identity
+    source: skills/identity/sign-in/SKILL.md
+    chatgpt_zip: dist/chatgpt/sign-in.zip
+    purpose: "Identity, device, ip, location, auth result, mfa details, session context."
+  - id: email-analysis
+    name: "Analyze suspicious email"
+    category: email
+    source: skills/email/email-analysis/SKILL.md
+    chatgpt_zip: dist/chatgpt/email-analysis.zip
+    purpose: "Headers, authentication, sender/reply-to, urls, attachment metadata, bec context and verdict."
+  - id: dns
+    name: "Analyze DNS events"
+    category: network
+    source: skills/network/dns/SKILL.md
+    chatgpt_zip: dist/chatgpt/dns.zip
+    purpose: "Queried name, client, response, frequency, reputation evidence and surrounding telemetry."
+  - id: network-flow
+    name: "Analyze network flows"
+    category: network
+    source: skills/network/network-flow/SKILL.md
+    chatgpt_zip: dist/chatgpt/network-flow.zip
+    purpose: "Source/destination, ports, bytes, timing, directionality and baseline."
+  - id: pcap-summary
+    name: "Interpret packet-analysis summaries"
+    category: network
+    source: skills/network/pcap-summary/SKILL.md
+    chatgpt_zip: dist/chatgpt/pcap-summary.zip
+    purpose: "Supplied zeek/protocol summaries, dns/tls/http metadata, timing and limits."
+  - id: proxy-url
+    name: "Review proxy and URL events"
+    category: network
+    source: skills/network/proxy-url/SKILL.md
+    chatgpt_zip: dist/chatgpt/proxy-url.zip
+    purpose: "Url components, user/host context, response, redirects, bytes and safe defanging."
+  - id: hash-analysis
+    name: "Review file-hash evidence"
+    category: threat-intelligence
+    source: skills/threat-intelligence/hash-analysis/SKILL.md
+    chatgpt_zip: dist/chatgpt/hash-analysis.zip
+    purpose: "Hash format, exact source, match context, prevalence, recency and file metadata."
+  - id: ioc-analysis
+    name: "Analyze indicators of compromise"
+    category: threat-intelligence
+    source: skills/threat-intelligence/ioc-analysis/SKILL.md
+    chatgpt_zip: dist/chatgpt/ioc-analysis.zip
+    purpose: "Normalize/defang indicators, source/time, enrichment, confidence, disposition and expiry."
+  - id: sandbox-report
+    name: "Interpret malware sandbox reports"
+    category: threat-intelligence
+    source: skills/threat-intelligence/sandbox-report/SKILL.md
+    chatgpt_zip: dist/chatgpt/sandbox-report.zip
+    purpose: "Behavior sequence, environment limitations, network/file/process activity and confidence."
+  - id: esql
+    name: "Draft and explain ES|QL"
+    category: siem
+    source: skills/siem/esql/SKILL.md
+    chatgpt_zip: dist/chatgpt/esql.zip
+    purpose: "Question-to-query using stated elastic schema, field assumptions and read-only investigation."
+  - id: kql
+    name: "Draft and explain KQL"
+    category: siem
+    source: skills/siem/kql/SKILL.md
+    chatgpt_zip: dist/chatgpt/kql.zip
+    purpose: "Question-to-query, named tables/fields, time bounds, safe read-only syntax and validation."
+  - id: query-results
+    name: "Interpret SIEM query results"
+    category: siem
+    source: skills/siem/query-results/SKILL.md
+    chatgpt_zip: dist/chatgpt/query-results.zip
+    purpose: "Result shape, grouping, time range, nulls, sampling and limits on conclusions."
+  - id: scan-alert
+    name: "Analyze port-scan alerts"
+    category: vulnerability-management
+    source: skills/vulnerability-management/scan-alert/SKILL.md
+    chatgpt_zip: dist/chatgpt/scan-alert.zip
+    purpose: "Scanner source, target range, ports, rate, allowlists and evidence of follow-on activity."
+  - id: scan-results
+    name: "Review vulnerability scan results"
+    category: vulnerability-management
+    source: skills/vulnerability-management/scan-results/SKILL.md
+    chatgpt_zip: dist/chatgpt/scan-results.zip
+    purpose: "Asset identity, plugin/evidence, version, exposure, confidence, duplicates and remediation."
+  - id: scan-scope
+    name: "Plan an authorized scan scope"
+    category: vulnerability-management
+    source: skills/vulnerability-management/scan-scope/SKILL.md
+    chatgpt_zip: dist/chatgpt/scan-scope.zip
+    purpose: "Written authorization, in-scope assets, exclusions, timing, rate limits and contacts."
+  - id: detection-review
+    name: "Review detection logic"
+    category: detection-engineering
+    source: skills/detection-engineering/detection-review/SKILL.md
+    chatgpt_zip: dist/chatgpt/detection-review.zip
+    purpose: "Goal, data dependencies, logic, test coverage, false positives and safe tuning proposals."
+  - id: sigma-yara
+    name: "Explain Sigma and YARA rules"
+    category: detection-engineering
+    source: skills/detection-engineering/sigma-yara/SKILL.md
+    chatgpt_zip: dist/chatgpt/sigma-yara.zip
+    purpose: "Rule intent, matching logic, required telemetry, false positives and limitations."
+  - id: escalation
+    name: "Write an incident escalation"
+    category: incident-response
+    source: skills/incident-response/escalation/SKILL.md
+    chatgpt_zip: dist/chatgpt/escalation.zip
+    purpose: "Concise evidence-based handoff, severity rationale, impact, unknowns, owner and next update."
+  - id: incident-report
+    name: "Draft an incident report"
+    category: incident-response
+    source: skills/incident-response/incident-report/SKILL.md
+    chatgpt_zip: dist/chatgpt/incident-report.zip
+    purpose: "Verified scope, executive summary, timeline, impact, response, gaps and follow-up actions."
+  - id: incident-scope
+    name: "Expand incident scope safely"
+    category: incident-response
+    source: skills/incident-response/incident-scope/SKILL.md
+    chatgpt_zip: dist/chatgpt/incident-scope.zip
+    purpose: "Generate bounded read-only searches for related identities, hosts, indicators and time window."
+  - id: timeline
+    name: "Build an incident timeline"
+    category: incident-response
+    source: skills/incident-response/timeline/SKILL.md
+    chatgpt_zip: dist/chatgpt/timeline.zip
+    purpose: "Normalize timezones, preserve source references, order events and mark uncertainty."
+  - id: xdr-alert
+    name: "Interpret an XDR alert"
+    category: incident-response
+    source: skills/incident-response/xdr-alert/SKILL.md
+    chatgpt_zip: dist/chatgpt/xdr-alert.zip
+    purpose: "Alert fields, detection rationale, entities, confidence, missing context."

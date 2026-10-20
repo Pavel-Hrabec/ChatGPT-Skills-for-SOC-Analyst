@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "scope": "Community security engineering extension; additive to the original library",
+  "skills": [
+    {
+      "id": "sigma",
+      "name": "Sigma",
+      "category": "detection-engineering",
+      "source": "skills/detection-engineering/sigma/SKILL.md",
+      "chatgpt_zip": "dist/chatgpt/sigma.zip",
+      "inputs": "A behavior description or cited report, representative events, logging source, target backend, and any existing processing pipeline.",
+      "outputs": "Sigma YAML, source-to-rule rationale, field dependencies, conversion assumptions, positive/negative test requirements and validation status.",
+      "reference_reviewed": "2026-10-20",
+      "capabilities": [
+        "supplied-artifacts",
+        "documentation-refresh-with-browsing"
+      ],
+      "external_connections": "Optional; separately configured and authorized. No connector is bundled.",
+      "sources": [
+        {
+          "title": "Sigma rules specification",
+          "url": "https://sigmahq.io/sigma-specification/specification/sigma-rules-specification.html"
+        },
+        {
+          "title": "Sigma processing pipelines",
+          "url": "https://sigmahq.io/docs/digging-deeper/pipelines.html"
+        },
+        {
+          "title": "Sigma correlations",
+          "url": "https://sigmahq.io/docs/meta/correlations"
+        },
+        {
+          "title": "MITRE ATT&CK data and tools",
+          "url": "https://attack.mitre.org/resources/attack-data-and-tools/"
+        }
+      ]
+    },
+    {
+      "id": "kql-detection",
+      "name": "KQL Detection",
+      "category": "detection-engineering",
+      "source": "skills/detection-engineering/kql-detection/SKILL.md",
+      "chatgpt_zip": "dist/chatgpt/kql-detection.zip",
+      "inputs": "The target Microsoft detection product, verified tables and fields, representative events, detection hypothesis and intended schedule.",
+      "outputs": "KQL query, product-specific rule configuration, telemetry requirements, entity mapping, test plan and deployment-readiness assessment.",
+      "reference_reviewed": "2026-10-20",
+      "capabilities": [
+        "supplied-artifacts",
+        "documentation-refresh-with-browsing"
+      ],
+      "external_connections": "Optional; separately configured and authorized. No connector is bundled.",
+      "sources": [
+        {
+          "title": "Defender XDR custom detections",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules"
+        },
+        {
+          "title": "Microsoft Sentinel scheduled analytics",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/create-analytics-rules"
+        },
+        {
+          "title": "MITRE ATT&CK data and tools",
+          "url": "https://attack.mitre.org/resources/attack-data-and-tools/"
+        }
+      ]
+    },
+    {
+      "id": "spl-detection",
+      "name": "SPL Detection",
+      "category": "detection-engineering",
+      "source": "skills/detection-engineering/spl-detection/SKILL.md",
+      "chatgpt_zip": "dist/chatgpt/spl-detection.zip",
+      "inputs": "Splunk deployment and detection type, indexes/sourcetypes or CIM data model, sample events, existing macros/lookups and a behavior hypothesis.",
+      "outputs": "SPL search, dependencies, scheduling and grouping choices, validation evidence and a reviewable detection content package.",
+      "reference_reviewed": "2026-10-20",
+      "capabilities": [
+        "supplied-artifacts",
+        "documentation-refresh-with-browsing"
+      ],
+      "external_connections": "Optional; separately configured and authorized. No connector is bundled.",
+      "sources": [
+        {
+          "title": "Splunk Security Content",
+          "url": "https://github.com/splunk/security_content"
+        },
+        {
+          "title": "Splunk contentctl",
+          "url": "https://github.com/splunk/contentctl"
+        },
+        {
+          "title": "Splunk Attack Data",
+          "url": "https://github.com/splunk/attack_data"
+        }
+      ]
+    },
+    {
+      "id": "rule-tests",
+      "name": "Rule Tests",
+      "category": "detection-engineering",
+      "source": "skills/detection-engineering/rule-tests/SKILL.md",
+      "chatgpt_zip": "dist/chatgpt/rule-tests.zip",
+      "inputs": "A specific rule version, target engine/version, field mappings and representative malicious and legitimate telemetry.",
+      "outputs": "A test manifest, fixtures or fixture references, backend-appropriate assertions, execution instructions and result limitations.",
+      "reference_reviewed": "2026-10-20",
+      "capabilities": [
+        "supplied-artifacts",
+        "documentation-refresh-with-browsing"
+      ],
+      "external_connections": "Optional; separately configured and authorized. No connector is bundled.",
+      "sources": [
+        {
+          "title": "Splunk contentctl",
+          "url": "https://github.com/splunk/contentctl"
+        },
+        {
+          "title": "Elastic Detection Rules",
+          "url": "https://github.com/elastic/detection-rules"
+        },
+        {
+          "title": "Sigma rules specification",
+          "url": "https://sigmahq.io/sigma-specification/specification/sigma-rules-specification.html"
+        },
+        {
+          "title": "Splunk Attack Data",
+          "url": "https://github.com/splunk/attack_data"
+        }
+      ]
+    },
+    {
+      "id": "rule-tuning",
+      "name": "Rule Tuning",
+      "category": "detection-engineering",
+      "source": "skills/detection-engineering/rule-tuning/SKILL.md",
+      "chatgpt_zip": "dist/chatgpt/rule-tuning.zip",
+      "inputs": "Current rule/version, adjudicated alerts, sampled underlying events, intended behavior, environment context and candidate exceptions.",
+      "outputs": "A minimal tuning diff, before/after cohort metrics, positive regressions, exception ownership/expiry and rollout/rollback guidance.",
+      "reference_reviewed": "2026-10-20",
+      "capabilities": [
+        "supplied-artifacts",
+        "documentation-refresh-with-browsing"
+      ],
+      "external_connections": "Optional; separately configured and authorized. No connector is bundled.",
+      "sources": [
+        {
+          "title": "Splunk Security Content",
+          "url": "https://github.com/splunk/security_content"
+        },
+        {
+          "title": "Elastic Detection Rules",
+          "url": "https://github.com/elastic/detection-rules"
+        },
+        {
+          "title": "MITRE ATT&CK data and tools",
+          "url": "https://attack.mitre.org/resources/attack-data-and-tools/"
+        }
+      ]
+    },
+    {
+      "id": "detection-replay",
+      "name": "Detection Replay",
+      "category": "detection-engineering",
+      "source": "skills/detection-engineering/detection-replay/SKILL.md",
+      "chatgpt_zip": "dist/chatgpt/detection-replay.zip",
+      "inputs": "Rule and mapping versions, recorded dataset with provenance, expected outcomes, target lab/backend and time-handling requirements.",
+      "outputs": "A reproducible replay plan or actual run record with input identity, transformations, matched evidence and validation gaps.",
+      "reference_reviewed": "2026-10-20",
+      "capabilities": [
+        "supplied-artifacts",
+        "documentation-refresh-with-browsing"
+      ],
+      "external_connections": "Optional; separately configured and authorized. No connector is bundled.",
+      "sources": [
+        {
+          "title": "Splunk Attack Data",
+          "url": "https://github.com/splunk/attack_data"
+        },
+        {
+          "title": "Splunk contentctl",
+          "url": "https://github.com/splunk/contentctl"
+        },
+        {
+          "title": "Elastic Detection Rules",
+          "url": "https://github.com/elastic/detection-rules"
+        },
+        {
+          "title": "OpenTelemetry logs data model",
+          "url": "https://opentelemetry.io/docs/specs/otel/logs/data-model/"
+        }
+      ]
+    },
+    {
+      "id": "log-parser",
+      "name": "Log Parser",
+      "category": "telemetry-engineering",
+      "source": "skills/telemetry-engineering/log-parser/SKILL.md",
+      "chatgpt_zip": "dist/chatgpt/log-parser.zip",
+      "inputs": "Representative raw records including malformed and multiline examples, source format/version, target parser engine and expected output contract.",
+      "outputs": "Parser code or pipeline, field/type contract, explicit failure handling, reproducible parser tests and operational limits.",
+      "reference_reviewed": "2026-10-20",
+      "capabilities": [
+        "supplied-artifacts",
+        "documentation-refresh-with-browsing"
+      ],
+      "external_connections": "Optional; separately configured and authorized. No connector is bundled.",
+      "sources": [
+        {
+          "title": "Elasticsearch simulate pipeline API",
+          "url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-ingest-simulate"
+        },
+        {
+          "title": "OpenTelemetry logs data model",
+          "url": "https://opentelemetry.io/docs/specs/otel/logs/data-model/"
+        },
+        {
+          "title": "Map custom data to ECS",
+          "url": "https://www.elastic.co/docs/reference/ecs/ecs-converting"
+        }
+      ]
+    },
+    {
+      "id": "field-mapping",
+      "name": "Field Mapping",
+      "category": "telemetry-engineering",
+      "source": "skills/telemetry-engineering/field-mapping/SKILL.md",
+      "chatgpt_zip": "dist/chatgpt/field-mapping.zip",
+      "inputs": "Source field documentation and representative events, a named target schema/version, required downstream detections and mapping constraints.",
+      "outputs": "Source-to-target mapping specification, transformation logic, unresolved semantics, validation cases and downstream impact notes.",
+      "reference_reviewed": "2026-10-20",
+      "capabilities": [
+        "supplied-artifacts",
+        "documentation-refresh-with-browsing"
+      ],
+      "external_connections": "Optional; separately configured and authorized. No connector is bundled.",
+      "sources": [
+        {
+          "title": "Map custom data to ECS",
+          "url": "https://www.elastic.co/docs/reference/ecs/ecs-converting"
+        },
+        {
+          "title": "OCSF schema browser",
+          "url": "https://schema.ocsf.io/"
+        },
+        {
+          "title": "OpenTelemetry logs data model",
+          "url": "https://opentelemetry.io/docs/specs/otel/logs/data-model/"
+        }
+      ]
+    },
+    {
+      "id": "log-quality",
+      "name": "Log Quality",
+      "category": "telemetry-engineering",
+      "source": "skills/telemetry-engineering/log-quality/SKILL.md",
+      "chatgpt_zip": "dist/chatgpt/log-quality.zip",
+      "inputs": "Security log export or confirmed query access, required fields, source inventory, timestamp definitions and the period being assessed.",
+      "outputs": "Measured quality profile with denominators, affected detection dependencies, evidence-supported causes and prioritized remediation checks.",
+      "reference_reviewed": "2026-10-20",
+      "capabilities": [
+        "supplied-artifacts",
+        "documentation-refresh-with-browsing",
+        "offline-python-helper"
+      ],
+      "external_connections": "Optional; separately configured and authorized. No connector is bundled.",
+      "sources": [
+        {
+          "title": "OpenTelemetry logs data model",
+          "url": "https://opentelemetry.io/docs/specs/otel/logs/data-model/"
+        },
+        {
+          "title": "Map custom data to ECS",
+          "url": "https://www.elastic.co/docs/reference/ecs/ecs-converting"
+        },
+        {
+          "title": "OCSF schema browser",
+          "url": "https://schema.ocsf.io/"
+        }
+      ]
+    },
+    {
+      "id": "feed-quality",
+      "name": "Feed Quality",
+      "category": "threat-intelligence-engineering",
+      "source": "skills/threat-intelligence-engineering/feed-quality/SKILL.md",
+      "chatgpt_zip": "dist/chatgpt/feed-quality.zip",
+      "inputs": "An intelligence export or authorized feed connection, provider field definitions, evaluation date, indicator types and the intended operational use.",
+      "outputs": "A feed quality assessment, normalization and provenance gaps, overlap/age metrics, policy recommendations and limitations on maliciousness claims.",
+      "reference_reviewed": "2026-10-20",
+      "capabilities": [
+        "supplied-artifacts",
+        "documentation-refresh-with-browsing",
+        "offline-python-helper"
+      ],
+      "external_connections": "Optional; separately configured and authorized. No connector is bundled.",
+      "sources": [
+        {
+          "title": "OASIS STIX 2.1 specification",
+          "url": "https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html"
+        },
+        {
+          "title": "FIRST Traffic Light Protocol",
+          "url": "https://www.first.org/tlp/"
+        },
+        {
+          "title": "ThreatFox community API",
+          "url": "https://threatfox.abuse.ch/api/"
+        },
+        {
+          "title": "OpenCTI connectors",
+          "url": "https://docs.opencti.io/latest/deployment/connectors/"
+        }
+      ]
+    }
+  ]
+}
