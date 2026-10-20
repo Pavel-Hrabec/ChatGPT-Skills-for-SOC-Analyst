@@ -1,6 +1,6 @@
 # Community Security Engineering Skills
 
-Ten new skills extend the SOC investigation library into detection authoring, testing, tuning, replay, telemetry engineering and threat intelligence quality. Existing skills and packages are preserved. This extension is intended for community use and contributions.
+Engineering skills cover detection authoring, testing, tuning, replay, telemetry engineering and threat intelligence quality. The workflows below are part of the [complete catalog](CATALOG.md).
 
 | Skill | Use | Upload |
 |---|---|---|
@@ -17,20 +17,20 @@ Ten new skills extend the SOC investigation library into detection authoring, te
 
 ## Install and use
 
-Import one ZIP from `dist/chatgpt/` into a compatible ChatGPT Skills interface. Provide the target product/version, schema or sample evidence and the artifact you want produced. Each skill has its own README and progressively loaded engineering references. Skill descriptions distinguish the new authoring workflows from the existing KQL query and Sigma/YARA explanation skills.
+Import one ZIP from `dist/chatgpt/` into a compatible ChatGPT Skills interface. Provide the target product/version, schema or sample evidence and the artifact you want produced. Each skill has its own README and progressively loaded engineering references. Skill descriptions distinguish authoring workflows from query assistance and rule explanation.
 
 ## Knowledge and integrations
 
-Each source list records primary pages opened on 2026-10-20; refresh mutable product documentation for the target deployment. References include Sigma, Microsoft Defender/Sentinel, Splunk, Elastic, OCSF, OpenTelemetry, MITRE, OASIS, FIRST, ThreatFox and OpenCTI. New instructions are original task-specific synthesis, not copied upstream skills.
+Each source list records primary pages opened on 2026-10-20; refresh mutable product documentation for the target deployment. References include Sigma, Microsoft Defender/Sentinel, Splunk, Elastic, OCSF, OpenTelemetry, MITRE, OASIS, FIRST, ThreatFox and OpenCTI. Instructions are task-specific synthesis based on the cited sources.
 
 The skills use supplied evidence and, when available, authorized documentation or backend tools. No live MCP server, credentials or provider subscription is bundled. The Log Quality and Feed Quality packages include standard-library Python profilers for bounded local NDJSON exports. They provide measurements and never query reputation services or classify an indicator as malicious.
 
 ## Validation and limits
 
-All ten skills passed the bundled skill validator using PyYAML 6.0.3. All ten ZIPs matched their source contents, and local documentation links resolved. Ten offline helper regression tests passed, covering malformed input, missing values, timezone handling, duplicates, age/expiry and aggregate measurements. Run the standard-library helper suite from the repository root with `python -m unittest discover -s tests/engineering -v`.
+The library validation report records skill checks, package checks and local documentation links. The offline profiler tests cover malformed input, missing values, timezone handling, duplicates, age/expiry and aggregate measurements. Run the standard-library helper suite from the repository root with `python -m unittest discover -s tests/engineering -v`.
 
-The GitHub extension is constructed additively from the existing library tree; existing file hashes are preserved. Backend-specific instructions and generated queries still require validation in the user's actual engine/version. No live Splunk, Defender, Sentinel, Elastic or threat-feed API was exercised for this extension. Skill packaging validation does not establish end-to-end behavior in ChatGPT or a SIEM.
+Backend-specific instructions and generated queries require validation in the user's actual engine/version. No live Splunk, Defender, Sentinel, Elastic or threat-feed API was exercised during library validation. Skill packaging validation does not establish end-to-end behavior in ChatGPT or a SIEM.
 
 ## Community contributions
 
-Use `engineering-catalog.json` to discover the new skills; the original catalog remains intact. Additions should state the investigation or engineering question, required inputs, concrete outputs, primary sources and compatibility limits. Include actual validation evidence when claiming a tool or backend works. Preserve the distinction between static review, local helper execution, query validation and live alert-service behavior. Keep classroom/demo payloads outside skill packages; ordinary task-specific reference guidance belongs with the skill.
+Use [CATALOG.md](CATALOG.md) or `community-catalog.json` to discover skills. Additions should state the investigation or engineering question, required inputs, concrete outputs, primary sources and compatibility limits. Include actual validation evidence when claiming a tool or backend works. Preserve the distinction between static review, local helper execution, query validation and live alert-service behavior. Keep classroom/demo payloads outside skill packages; ordinary task-specific reference guidance belongs with the skill.
