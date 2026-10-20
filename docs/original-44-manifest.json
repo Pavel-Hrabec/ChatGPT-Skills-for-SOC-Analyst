@@ -1,0 +1,641 @@
+{
+  "base_commit": "bc5dfa3c264f1fe61ccafce56c449027244770ba",
+  "files": [
+    {
+      "path": "CONTRIBUTING.md",
+      "sha": "4933688680669e185d5051ef825c7062d7295bbf"
+    },
+    {
+      "path": "ENGINEERING.md",
+      "sha": "be3824d26c38318609385054e7a34c602b4950d0"
+    },
+    {
+      "path": "catalog.yml",
+      "sha": "d4e2eb89c2ae90d94b9e6e3aa391f53ad6b1a2fa"
+    },
+    {
+      "path": "dist/chatgpt/ad-changes.zip",
+      "sha": "c6f3bad48ca2f57d685a10b782a571da7c9dbe26"
+    },
+    {
+      "path": "dist/chatgpt/detection-replay.zip",
+      "sha": "7cd21614e0c842cd30700c0108501e6b1ecb35e1"
+    },
+    {
+      "path": "dist/chatgpt/detection-review.zip",
+      "sha": "0c55bb2b51f3095be5f27e12dcd22916ce16e42f"
+    },
+    {
+      "path": "dist/chatgpt/dns.zip",
+      "sha": "0cab820ca18bfe423b6c3b4791a0cbff6102308d"
+    },
+    {
+      "path": "dist/chatgpt/email-analysis.zip",
+      "sha": "ae6712110c99fccabbce383e5e08cbc6b61cd3fb"
+    },
+    {
+      "path": "dist/chatgpt/escalation.zip",
+      "sha": "9ea3e9f142a4a94d130e0e099aaf2d4ce2ce1596"
+    },
+    {
+      "path": "dist/chatgpt/esql.zip",
+      "sha": "9f5e92f16de42ed11eee3d18e9a7334497d4b41f"
+    },
+    {
+      "path": "dist/chatgpt/feed-quality.zip",
+      "sha": "fa3c0824abdd92286043f0779816a6d85931bf25"
+    },
+    {
+      "path": "dist/chatgpt/field-mapping.zip",
+      "sha": "ba994304930cfb7e3ec78466041895a55ecb3fbd"
+    },
+    {
+      "path": "dist/chatgpt/hash-analysis.zip",
+      "sha": "b13d23dc49e8c181b2f3998bf43c5e762bab0969"
+    },
+    {
+      "path": "dist/chatgpt/incident-report.zip",
+      "sha": "98574581e398728930d64f71b388a4f75f9e23b8"
+    },
+    {
+      "path": "dist/chatgpt/incident-scope.zip",
+      "sha": "043dea4a35b54ef2f197c9e25fdf4da6d769d030"
+    },
+    {
+      "path": "dist/chatgpt/ioc-analysis.zip",
+      "sha": "41f4d662784c3a36969f920991c2b15b05662d62"
+    },
+    {
+      "path": "dist/chatgpt/kerberos.zip",
+      "sha": "d56edf5f588ebecf43595f7ae4532c94c2983771"
+    },
+    {
+      "path": "dist/chatgpt/kql-detection.zip",
+      "sha": "85a2419acb81320161622d91ac014cd15a653e02"
+    },
+    {
+      "path": "dist/chatgpt/kql.zip",
+      "sha": "b0d768c5c979567fc500d6a6bce87aa4b06466ec"
+    },
+    {
+      "path": "dist/chatgpt/ldap.zip",
+      "sha": "8257d7c6cec137d470cd55f597e99021c4136e76"
+    },
+    {
+      "path": "dist/chatgpt/log-parser.zip",
+      "sha": "e3ed0ef6514aace16046e6180d2403c03aa66680"
+    },
+    {
+      "path": "dist/chatgpt/log-quality.zip",
+      "sha": "ffc64621ecf624363c2b5c46283f9f831b57a4af"
+    },
+    {
+      "path": "dist/chatgpt/network-flow.zip",
+      "sha": "4f7d220b3252d114a9e0c9ccc74dbf9cdd0a8601"
+    },
+    {
+      "path": "dist/chatgpt/office-macros.zip",
+      "sha": "691b88fa593607bef4ce95a229864c3bf42b2d77"
+    },
+    {
+      "path": "dist/chatgpt/pcap-summary.zip",
+      "sha": "d486ad6856817f7b26c248bacf68220c5a44231e"
+    },
+    {
+      "path": "dist/chatgpt/powershell.zip",
+      "sha": "c2a6708211fecb15ceb429774387b0655eed95e1"
+    },
+    {
+      "path": "dist/chatgpt/privileged-access.zip",
+      "sha": "4a01af50888a30b2e891a8e3b276998c4a9d3cea"
+    },
+    {
+      "path": "dist/chatgpt/process-tree.zip",
+      "sha": "b5c101a4685e97e50d9d35aea0b56f7a69837c56"
+    },
+    {
+      "path": "dist/chatgpt/proxy-url.zip",
+      "sha": "4705428a8e4e51a4fcdb50b476b784a618d33a6a"
+    },
+    {
+      "path": "dist/chatgpt/query-results.zip",
+      "sha": "7046c40298a6090a84a7c4802dba10fcd9c6f486"
+    },
+    {
+      "path": "dist/chatgpt/registry.zip",
+      "sha": "e0e62d2675730b5ce3ba75d951a1d89b8c46e157"
+    },
+    {
+      "path": "dist/chatgpt/rule-tests.zip",
+      "sha": "a6b0564b91b072e88154b90c416b9f9640b33e30"
+    },
+    {
+      "path": "dist/chatgpt/rule-tuning.zip",
+      "sha": "3420bb075eda61d2b16cc30123ac4a52ea187722"
+    },
+    {
+      "path": "dist/chatgpt/sandbox-report.zip",
+      "sha": "83fccfced7c521681cf145614f49bec4f63fd7c9"
+    },
+    {
+      "path": "dist/chatgpt/scan-alert.zip",
+      "sha": "1aea50bf925383ea48d1c1f9591f3fff2d51a4cf"
+    },
+    {
+      "path": "dist/chatgpt/scan-results.zip",
+      "sha": "74383a9367e66aad8f1966dd132b9bc32dd1e353"
+    },
+    {
+      "path": "dist/chatgpt/scan-scope.zip",
+      "sha": "2b6cfe125da59844289c85af27954025f356e24a"
+    },
+    {
+      "path": "dist/chatgpt/script-decode.zip",
+      "sha": "f5b29dd5f738a07296b6569baa481a33ab60daa8"
+    },
+    {
+      "path": "dist/chatgpt/sigma-yara.zip",
+      "sha": "571dca1ae7f3902026dd335a6f2aec2130f56a68"
+    },
+    {
+      "path": "dist/chatgpt/sigma.zip",
+      "sha": "35c683b376e6507ffedcaaeeebec0ff0826877c3"
+    },
+    {
+      "path": "dist/chatgpt/sign-in.zip",
+      "sha": "bf48fa75308b0544a522cc88d96a1316cec3a05d"
+    },
+    {
+      "path": "dist/chatgpt/spl-detection.zip",
+      "sha": "b256dbe745b7923b20eaa045a92d19cf90bd4d2d"
+    },
+    {
+      "path": "dist/chatgpt/tasks-services.zip",
+      "sha": "3ea105bd7f8f25fbf0d982479a7cbd1ab29728c6"
+    },
+    {
+      "path": "dist/chatgpt/timeline.zip",
+      "sha": "c846db164ca8aad38f9091c54841e3f6989ccc81"
+    },
+    {
+      "path": "dist/chatgpt/windows-command.zip",
+      "sha": "e1fb37cdd517674cd256a7cd47eac46274cd792c"
+    },
+    {
+      "path": "dist/chatgpt/windows-events.zip",
+      "sha": "7a46612a845f779436270bc22d08abce4ab65f19"
+    },
+    {
+      "path": "dist/chatgpt/xdr-alert.zip",
+      "sha": "e7f7f84946b7e1db63b2ff7b9fa7b0ee3acfbef6"
+    },
+    {
+      "path": "engineering-catalog.json",
+      "sha": "39427d8063d605f05aa5cc903aced80edc480d8d"
+    },
+    {
+      "path": "skills/detection-engineering/detection-replay/README.md",
+      "sha": "0800cad14136e2a8619e2d2b70c6daab7d0a7339"
+    },
+    {
+      "path": "skills/detection-engineering/detection-replay/SKILL.md",
+      "sha": "4788b9bea4488a63346aea9c85999f54199335c5"
+    },
+    {
+      "path": "skills/detection-engineering/detection-replay/references/engineering.md",
+      "sha": "3c8b26c4787174dc2dc5f24ce0fb0308e7dbc926"
+    },
+    {
+      "path": "skills/detection-engineering/detection-replay/references/sources.md",
+      "sha": "51ab6af77b59f4eb205ef91474283c5bdfd35020"
+    },
+    {
+      "path": "skills/detection-engineering/detection-review/README.md",
+      "sha": "4808e253cf7f4dfb29d8ed15efdb74002c248ffc"
+    },
+    {
+      "path": "skills/detection-engineering/detection-review/SKILL.md",
+      "sha": "fc827e97b4a6a650149cd4094214e89ce3164635"
+    },
+    {
+      "path": "skills/detection-engineering/kql-detection/README.md",
+      "sha": "6d3007f094595d3258f863a7eeb4f651eef67d41"
+    },
+    {
+      "path": "skills/detection-engineering/kql-detection/SKILL.md",
+      "sha": "3631274d6036939d462500d875d76b3f8d92f13a"
+    },
+    {
+      "path": "skills/detection-engineering/kql-detection/references/engineering.md",
+      "sha": "5617d870865dc9c4ffd0c311fe99eb60e7bd467e"
+    },
+    {
+      "path": "skills/detection-engineering/kql-detection/references/sources.md",
+      "sha": "d839bd78738c96cd0c0030614dffa38b957c7147"
+    },
+    {
+      "path": "skills/detection-engineering/rule-tests/README.md",
+      "sha": "2fe7aea47e91a9c76fdfa61f398d95bc24572970"
+    },
+    {
+      "path": "skills/detection-engineering/rule-tests/SKILL.md",
+      "sha": "e3c1b808468228926395874fe428dc88d95e1931"
+    },
+    {
+      "path": "skills/detection-engineering/rule-tests/references/engineering.md",
+      "sha": "e9efb955e8dabd198a847a5544823107ebc8cef6"
+    },
+    {
+      "path": "skills/detection-engineering/rule-tests/references/sources.md",
+      "sha": "b83b762d198ac452e5006f63765745eada7771ba"
+    },
+    {
+      "path": "skills/detection-engineering/rule-tuning/README.md",
+      "sha": "e34b94ffb4a7b24d88bf913cbf605a89737ecf08"
+    },
+    {
+      "path": "skills/detection-engineering/rule-tuning/SKILL.md",
+      "sha": "d51041f65a541b055c5a646778b0ad22fb3638ec"
+    },
+    {
+      "path": "skills/detection-engineering/rule-tuning/references/engineering.md",
+      "sha": "b508eb7a2a76c126875ff9ba60cd339b2c8fa98f"
+    },
+    {
+      "path": "skills/detection-engineering/rule-tuning/references/sources.md",
+      "sha": "a64727b706c66e3232d0d8f63caa043c649e97ad"
+    },
+    {
+      "path": "skills/detection-engineering/sigma-yara/README.md",
+      "sha": "a9a30c4de931c2cd9777310eba98ce9114b21c32"
+    },
+    {
+      "path": "skills/detection-engineering/sigma-yara/SKILL.md",
+      "sha": "3deedcba418d50710c773f5c1aa8f03c9c613c57"
+    },
+    {
+      "path": "skills/detection-engineering/sigma/README.md",
+      "sha": "2da773865fe8d432f887a5f1af2b01c7f935a13e"
+    },
+    {
+      "path": "skills/detection-engineering/sigma/SKILL.md",
+      "sha": "0b6733425758415fd1390420feaf32ad721232b2"
+    },
+    {
+      "path": "skills/detection-engineering/sigma/references/engineering.md",
+      "sha": "1a1dd868c50689afec4642b7192ca5d960ccbebe"
+    },
+    {
+      "path": "skills/detection-engineering/sigma/references/sources.md",
+      "sha": "9070d4cba56e1ec752c420ea2ff234fef04c53a0"
+    },
+    {
+      "path": "skills/detection-engineering/spl-detection/README.md",
+      "sha": "779c61c83df81a4e3cc19c3ce6e4158e8360afbc"
+    },
+    {
+      "path": "skills/detection-engineering/spl-detection/SKILL.md",
+      "sha": "a9b24c46976d088e0e51062163b8a716a3abb2f2"
+    },
+    {
+      "path": "skills/detection-engineering/spl-detection/references/engineering.md",
+      "sha": "2999af44075c439af4ea1761d5683421794c216d"
+    },
+    {
+      "path": "skills/detection-engineering/spl-detection/references/sources.md",
+      "sha": "39e05ccff550005119f1c75e4e30f6b7e84859ba"
+    },
+    {
+      "path": "skills/email/email-analysis/README.md",
+      "sha": "203dae33fc2a63b32be6605cb9b895cc4d22d809"
+    },
+    {
+      "path": "skills/email/email-analysis/SKILL.md",
+      "sha": "9980c07c35dcb674847373e5be0729cdb7fe57a9"
+    },
+    {
+      "path": "skills/endpoint/office-macros/README.md",
+      "sha": "17b01b665ec9abb262d529841ec56912e8aebf33"
+    },
+    {
+      "path": "skills/endpoint/office-macros/SKILL.md",
+      "sha": "c079af58be122ab0a2a683af0c2b4a4a23aa700f"
+    },
+    {
+      "path": "skills/endpoint/powershell/README.md",
+      "sha": "da6e534b713f21730be0b6f5b0c7107117dcb4ba"
+    },
+    {
+      "path": "skills/endpoint/powershell/SKILL.md",
+      "sha": "139b0d38338f1bba84ff8ddba443e930d9f5118a"
+    },
+    {
+      "path": "skills/endpoint/process-tree/README.md",
+      "sha": "99ba89ffe1df91c51161f896ddea49b4eabae9b7"
+    },
+    {
+      "path": "skills/endpoint/process-tree/SKILL.md",
+      "sha": "9167105b0001937188f5dc4d51088080b49c1a85"
+    },
+    {
+      "path": "skills/endpoint/registry/README.md",
+      "sha": "704588c7284f5a937859719bb4c55fda39fc32f2"
+    },
+    {
+      "path": "skills/endpoint/registry/SKILL.md",
+      "sha": "d3a58dc8e3eaa789316e90141ee68e9c9f068d43"
+    },
+    {
+      "path": "skills/endpoint/script-decode/README.md",
+      "sha": "c6d2dc73294d78cfae35b267d4598234d5ca33af"
+    },
+    {
+      "path": "skills/endpoint/script-decode/SKILL.md",
+      "sha": "a63c0af7fc51144cc8546b02b46539ee95addbc3"
+    },
+    {
+      "path": "skills/endpoint/tasks-services/README.md",
+      "sha": "d466de05ea7d287572407224741ac09fbce04548"
+    },
+    {
+      "path": "skills/endpoint/tasks-services/SKILL.md",
+      "sha": "b663079f00fa1656e3007bed6087da1dbaa721d2"
+    },
+    {
+      "path": "skills/endpoint/windows-command/README.md",
+      "sha": "67b0906ff399905571494bd951e0c94fffd61d40"
+    },
+    {
+      "path": "skills/endpoint/windows-command/SKILL.md",
+      "sha": "f83c42bdc0d81c20ab52cea0dc2342e1d5132b35"
+    },
+    {
+      "path": "skills/endpoint/windows-events/README.md",
+      "sha": "7440b9fa9bd04b27545d484b052bfac538b661a5"
+    },
+    {
+      "path": "skills/endpoint/windows-events/SKILL.md",
+      "sha": "e7cde9b719ee4e631dc6f65c35fce8a334918e9a"
+    },
+    {
+      "path": "skills/identity/ad-changes/README.md",
+      "sha": "1205e67a2ba942f7331edaca9fb1a087e3a6db9e"
+    },
+    {
+      "path": "skills/identity/ad-changes/SKILL.md",
+      "sha": "e3d7865ea70433212d74679a1bf2932f638e5691"
+    },
+    {
+      "path": "skills/identity/kerberos/README.md",
+      "sha": "b64c7a39a084af5261af08be38753d7b37265693"
+    },
+    {
+      "path": "skills/identity/kerberos/SKILL.md",
+      "sha": "8d6a103b11d2ec40d769474c230efa0d82d1e0f7"
+    },
+    {
+      "path": "skills/identity/ldap/README.md",
+      "sha": "75a38cc66479e25955e3a6e90f6cb06f0d0344f2"
+    },
+    {
+      "path": "skills/identity/ldap/SKILL.md",
+      "sha": "03ad57576c7ca642c743e40679dfce615d8f807f"
+    },
+    {
+      "path": "skills/identity/privileged-access/README.md",
+      "sha": "784dbef11f8a794744ad53fff9e8eba33f931c33"
+    },
+    {
+      "path": "skills/identity/privileged-access/SKILL.md",
+      "sha": "d60acbdaef9be6f037870e9560cd4777ec620ab9"
+    },
+    {
+      "path": "skills/identity/sign-in/README.md",
+      "sha": "203a8a7f9027e5e17e24e95ef6c2d8c88e842840"
+    },
+    {
+      "path": "skills/identity/sign-in/SKILL.md",
+      "sha": "c4bb5379ca34333b41b9fda452b396de872ca6ad"
+    },
+    {
+      "path": "skills/incident-response/escalation/README.md",
+      "sha": "e669df7b4bcd9ceb6e82925cbe6918f97b0d561b"
+    },
+    {
+      "path": "skills/incident-response/escalation/SKILL.md",
+      "sha": "bc488524f2746bb93ff3c1ab399d87d32a097eeb"
+    },
+    {
+      "path": "skills/incident-response/incident-report/README.md",
+      "sha": "64aee309d8a06a3233f02d1dc794cc27a8ae1b4a"
+    },
+    {
+      "path": "skills/incident-response/incident-report/SKILL.md",
+      "sha": "b15bec9caa834043646495ef37251157f04e5866"
+    },
+    {
+      "path": "skills/incident-response/incident-scope/README.md",
+      "sha": "4b0e3ab91fc9fe351f30103fd3eb2ec2c2d38bb0"
+    },
+    {
+      "path": "skills/incident-response/incident-scope/SKILL.md",
+      "sha": "992ae03253d2775a35847e39f9dc0c26853fdae6"
+    },
+    {
+      "path": "skills/incident-response/timeline/README.md",
+      "sha": "1c227d17bc38cc038896d81929b34b7fce5e5391"
+    },
+    {
+      "path": "skills/incident-response/timeline/SKILL.md",
+      "sha": "e7877fad9b31f151631e7e0995bad86f66125f06"
+    },
+    {
+      "path": "skills/incident-response/xdr-alert/README.md",
+      "sha": "8bcce3e41e86a311efcb06090971eaf230f5052f"
+    },
+    {
+      "path": "skills/incident-response/xdr-alert/SKILL.md",
+      "sha": "a7d279c997d5cbf6c9c0ae43439f908478d913ed"
+    },
+    {
+      "path": "skills/network/dns/README.md",
+      "sha": "25f75035ad54bf625d519b7299c5985c2b410f41"
+    },
+    {
+      "path": "skills/network/dns/SKILL.md",
+      "sha": "39d36b436e1a4317b74d95b2fc83ce3a2867adf5"
+    },
+    {
+      "path": "skills/network/network-flow/README.md",
+      "sha": "227cbf6fc2e5435f556a08734021a619fc22adcb"
+    },
+    {
+      "path": "skills/network/network-flow/SKILL.md",
+      "sha": "d6eee4fe892f339c53df9949f2271db28f763e3a"
+    },
+    {
+      "path": "skills/network/pcap-summary/README.md",
+      "sha": "77a5f1b8c686723f51f7b1198df19b50c3e5576a"
+    },
+    {
+      "path": "skills/network/pcap-summary/SKILL.md",
+      "sha": "2d142885a5589f80e53cd839ad559ebb27cf5b03"
+    },
+    {
+      "path": "skills/network/proxy-url/README.md",
+      "sha": "965987465d0f4194587e4b86a1885e94ac8a2161"
+    },
+    {
+      "path": "skills/network/proxy-url/SKILL.md",
+      "sha": "e590cf4a542072e44ca5fb2b55be6f2fcc16f043"
+    },
+    {
+      "path": "skills/siem/esql/README.md",
+      "sha": "7aaf1d92a7e618fd258a099b8235263d477203a7"
+    },
+    {
+      "path": "skills/siem/esql/SKILL.md",
+      "sha": "b53c240378379e76b8f7c90494a3ace4f92270c7"
+    },
+    {
+      "path": "skills/siem/kql/README.md",
+      "sha": "cc2801642478dd0edb82a1eb6593e9cf464ae8d0"
+    },
+    {
+      "path": "skills/siem/kql/SKILL.md",
+      "sha": "f2242f5b742d4b777e7c9f69604858cbf50393ba"
+    },
+    {
+      "path": "skills/siem/query-results/README.md",
+      "sha": "eff12ceccffb4d1c6bc6f3a5d28c4e8fdfe55b86"
+    },
+    {
+      "path": "skills/siem/query-results/SKILL.md",
+      "sha": "89abedf40f00a21b0937f2294e76b3ccce82885c"
+    },
+    {
+      "path": "skills/telemetry-engineering/field-mapping/README.md",
+      "sha": "30b3ae0bef98ba307bb822ea717b77ef7dc92f04"
+    },
+    {
+      "path": "skills/telemetry-engineering/field-mapping/SKILL.md",
+      "sha": "92c5d14174a075b8ff1ee7bd84a1949eff25d78d"
+    },
+    {
+      "path": "skills/telemetry-engineering/field-mapping/references/engineering.md",
+      "sha": "6ba2ff4f3e43950398e6ffbd5f57c5a9c8c75d6e"
+    },
+    {
+      "path": "skills/telemetry-engineering/field-mapping/references/sources.md",
+      "sha": "96b06a273557417da12815b80aca75eff78087b7"
+    },
+    {
+      "path": "skills/telemetry-engineering/log-parser/README.md",
+      "sha": "febb5d34ca01b293b52afd48579b0c03fbc041c3"
+    },
+    {
+      "path": "skills/telemetry-engineering/log-parser/SKILL.md",
+      "sha": "b3bb076519cf6d17d48806be05f823ae6fa9b784"
+    },
+    {
+      "path": "skills/telemetry-engineering/log-parser/references/engineering.md",
+      "sha": "04c6acf86f561a3c9f19f959dcb19f8c18ceb827"
+    },
+    {
+      "path": "skills/telemetry-engineering/log-parser/references/sources.md",
+      "sha": "caaf5067a90139121171c0af7e523843bca62bd4"
+    },
+    {
+      "path": "skills/telemetry-engineering/log-quality/README.md",
+      "sha": "6ea59f623941315eaa862fe79480c6b37b54f343"
+    },
+    {
+      "path": "skills/telemetry-engineering/log-quality/SKILL.md",
+      "sha": "ee3f620eb8be3a1cb09ee468a580c7801e225bf8"
+    },
+    {
+      "path": "skills/telemetry-engineering/log-quality/references/engineering.md",
+      "sha": "8507a90be68f3dec86533f9caf12bd24632a71e9"
+    },
+    {
+      "path": "skills/telemetry-engineering/log-quality/references/sources.md",
+      "sha": "0dbc7cbfbc7ab43b27a2367164cc85a379208590"
+    },
+    {
+      "path": "skills/telemetry-engineering/log-quality/scripts/profile_logs.py",
+      "sha": "c9649d587eaba5c4143f8d1000f3325dea33c4a8"
+    },
+    {
+      "path": "skills/threat-intelligence-engineering/feed-quality/README.md",
+      "sha": "384a4ab6a7f591c88f0e065d751ca90aedfdbf8d"
+    },
+    {
+      "path": "skills/threat-intelligence-engineering/feed-quality/SKILL.md",
+      "sha": "d49d8f353d4e534aca7e8bf79a34b8bb71bfab74"
+    },
+    {
+      "path": "skills/threat-intelligence-engineering/feed-quality/references/engineering.md",
+      "sha": "1a2f88abab03de0381c0d282edcb98e89857838d"
+    },
+    {
+      "path": "skills/threat-intelligence-engineering/feed-quality/references/sources.md",
+      "sha": "cc114d1cf7fba56c00488eb49cdfa85248167061"
+    },
+    {
+      "path": "skills/threat-intelligence-engineering/feed-quality/scripts/profile_feed.py",
+      "sha": "972aa372bc7714d0d46a6b37127689b46a6a788b"
+    },
+    {
+      "path": "skills/threat-intelligence/hash-analysis/README.md",
+      "sha": "2ed5b5d065e082062d82de6b78cc7f051d179e3e"
+    },
+    {
+      "path": "skills/threat-intelligence/hash-analysis/SKILL.md",
+      "sha": "befa78655cf4f2a6b8839385d83d061a1fb06e6a"
+    },
+    {
+      "path": "skills/threat-intelligence/ioc-analysis/README.md",
+      "sha": "6e4bca81fdfe99dac4b3d16d810e98e6a04ea3c5"
+    },
+    {
+      "path": "skills/threat-intelligence/ioc-analysis/SKILL.md",
+      "sha": "4f1e1f392383844a49008656fee74523080bdb60"
+    },
+    {
+      "path": "skills/threat-intelligence/sandbox-report/README.md",
+      "sha": "ce789f0fdb497a2c332a9afa11b7f63b1c4dd8a7"
+    },
+    {
+      "path": "skills/threat-intelligence/sandbox-report/SKILL.md",
+      "sha": "fdc6dfd9eaadb2427e8e626a8b5152416d66d090"
+    },
+    {
+      "path": "skills/vulnerability-management/scan-alert/README.md",
+      "sha": "c97134433937b06e0a71ae8714a7958c3b3baef7"
+    },
+    {
+      "path": "skills/vulnerability-management/scan-alert/SKILL.md",
+      "sha": "5617248184d2251af250a76c300159d9e3f96b2e"
+    },
+    {
+      "path": "skills/vulnerability-management/scan-results/README.md",
+      "sha": "b15507c0c48ae1c02592c96d80b0daf45d219d4a"
+    },
+    {
+      "path": "skills/vulnerability-management/scan-results/SKILL.md",
+      "sha": "f017c6f15a6c69d81be9e0cfa69bcfbf38b69688"
+    },
+    {
+      "path": "skills/vulnerability-management/scan-scope/README.md",
+      "sha": "3a799110f161f4475aca3dd2381b6a5c502a4b52"
+    },
+    {
+      "path": "skills/vulnerability-management/scan-scope/SKILL.md",
+      "sha": "ef381213810511968744b4b0b2950115894e4469"
+    },
+    {
+      "path": "tests/engineering/test_profilers.py",
+      "sha": "63c77492660bb71e1a7707786cf425195f0da15f"
+    }
+  ]
+}

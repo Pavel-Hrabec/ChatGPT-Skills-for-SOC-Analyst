@@ -1,0 +1,245 @@
+{
+  "review_date": "2026-10-20",
+  "sources": [
+    {
+      "id": "sysmon",
+      "title": "Microsoft Sysmon event documentation",
+      "url": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon",
+      "scope": "Endpoint event semantics and collection limitations."
+    },
+    {
+      "id": "attack",
+      "title": "MITRE ATT&CK data and tools",
+      "url": "https://attack.mitre.org/resources/attack-data-and-tools/",
+      "scope": "Behavior definitions and current structured technique references; verify any individual mapping before using it."
+    },
+    {
+      "id": "ir",
+      "title": "NIST SP 800-61 Rev. 3",
+      "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+      "scope": "Incident risk, analysis, response and recovery considerations."
+    },
+    {
+      "id": "kerberos",
+      "title": "Microsoft event 4769 documentation",
+      "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4769",
+      "scope": "Service-ticket telemetry; other authentication event schemas must be verified for the supplied source."
+    },
+    {
+      "id": "directory",
+      "title": "Microsoft event 4662 documentation",
+      "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4662",
+      "scope": "Directory object operations and configured audit visibility; not a complete AD/PKI protocol manual."
+    },
+    {
+      "id": "entra",
+      "title": "Microsoft Entra sign-in logs",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-ins",
+      "scope": "Identity context, sign-in categories and visibility."
+    },
+    {
+      "id": "m365",
+      "title": "Microsoft Purview audit activities",
+      "url": "https://learn.microsoft.com/en-us/purview/audit-log-activities",
+      "scope": "Operation meanings and service-specific audit coverage."
+    },
+    {
+      "id": "aws",
+      "title": "AWS CloudTrail record contents",
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html",
+      "scope": "Caller, session, request, resource and error context; check each service operation separately."
+    },
+    {
+      "id": "azure",
+      "title": "Azure Activity Log schema",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/activity-log-schema",
+      "scope": "Management operations, caller identity and operation results; resource data-plane logs differ."
+    },
+    {
+      "id": "gcp",
+      "title": "Google Cloud Audit Logs",
+      "url": "https://docs.cloud.google.com/logging/docs/audit",
+      "scope": "Audit categories, API caller context and service-dependent data-access coverage."
+    },
+    {
+      "id": "openssh",
+      "title": "OpenSSH sshd_config manual",
+      "url": "https://man.openbsd.org/sshd_config",
+      "scope": "Authentication methods and effective authorized-key/configuration scope."
+    },
+    {
+      "id": "audit",
+      "title": "Linux Audit project documentation",
+      "url": "https://github.com/linux-audit/audit-documentation",
+      "scope": "Audit event structures and interpretation resources."
+    },
+    {
+      "id": "sudo",
+      "title": "Sudo project",
+      "url": "https://github.com/sudo-project/sudo",
+      "scope": "Maintainer documentation and release-specific privilege-policy context."
+    },
+    {
+      "id": "systemd",
+      "title": "systemd service documentation",
+      "url": "https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html",
+      "scope": "Service execution settings; inspect timer and installed-version documentation where relevant."
+    },
+    {
+      "id": "loader",
+      "title": "Linux dynamic loader manual",
+      "url": "https://man7.org/linux/man-pages/man8/ld.so.8.html",
+      "scope": "Loader configuration, preload behavior and secure-execution qualifications."
+    },
+    {
+      "id": "zeek",
+      "title": "Zeek common logs",
+      "url": "https://docs.zeek.org/en/current/reference/logs/index.html",
+      "scope": "Protocol log families and field documentation; follow the specific log reference used."
+    },
+    {
+      "id": "suricata",
+      "title": "Suricata EVE JSON",
+      "url": "https://docs.suricata.io/en/latest/output/eve/eve-json-output.html",
+      "scope": "Protocol/event output. The reviewed latest branch is development documentation; select an installed release before implementation."
+    },
+    {
+      "id": "suricata-rules",
+      "title": "Suricata rule format",
+      "url": "https://docs.suricata.io/en/latest/rules/intro.html",
+      "scope": "Signature structure. The reviewed latest branch is development documentation; confirm options against the deployed release."
+    },
+    {
+      "id": "pe",
+      "title": "Microsoft PE format",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/debug/pe-format",
+      "scope": "Executable structure and field meanings, without establishing file behavior or maliciousness."
+    },
+    {
+      "id": "vt",
+      "title": "VirusTotal API v3",
+      "url": "https://docs.virustotal.com/reference/overview",
+      "scope": "Existing indicator/file reports and provider-defined response semantics."
+    },
+    {
+      "id": "volatility",
+      "title": "Volatility 3 documentation",
+      "url": "https://volatility3.readthedocs.io/en/stable/",
+      "scope": "Memory acquisition analysis context and version-dependent plugin operation."
+    },
+    {
+      "id": "kev",
+      "title": "CISA official KEV data mirror",
+      "url": "https://github.com/cisagov/kev-data",
+      "scope": "Published known-exploitation catalog, dates and vendor remediation references."
+    },
+    {
+      "id": "epss",
+      "title": "FIRST API",
+      "url": "https://api.first.org/",
+      "scope": "EPSS query format and dated exploitation prediction context."
+    },
+    {
+      "id": "stix",
+      "title": "OASIS STIX 2.1",
+      "url": "https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html",
+      "scope": "Objects, observations, validity, revocation, confidence, markings and relationships."
+    },
+    {
+      "id": "tlp",
+      "title": "FIRST TLP",
+      "url": "https://www.first.org/tlp/",
+      "scope": "Intelligence sharing boundaries; not a severity or confidence scale."
+    },
+    {
+      "id": "opencti",
+      "title": "OpenCTI connectors",
+      "url": "https://docs.opencti.io/latest/deployment/connectors/",
+      "scope": "Ingestion/enrichment architecture and separately configured access."
+    },
+    {
+      "id": "threatfox",
+      "title": "ThreatFox community API",
+      "url": "https://threatfox.abuse.ch/api/",
+      "scope": "Provider indicator observations, lookup operations and authentication requirements."
+    },
+    {
+      "id": "k8s",
+      "title": "Kubernetes auditing",
+      "url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/",
+      "scope": "Request identity, audit stages and configured body visibility."
+    },
+    {
+      "id": "k8s-rbac",
+      "title": "Kubernetes RBAC",
+      "url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+      "scope": "Role/binding scope and API authorization semantics."
+    },
+    {
+      "id": "elastic",
+      "title": "Elastic Detection Rules",
+      "url": "https://github.com/elastic/detection-rules",
+      "scope": "Repository rule conventions, validation and release-specific tooling."
+    },
+    {
+      "id": "ecs",
+      "title": "Elastic Common Schema mapping",
+      "url": "https://www.elastic.co/docs/reference/ecs/ecs-converting",
+      "scope": "Semantic field mapping and schema-version preservation."
+    },
+    {
+      "id": "yara",
+      "title": "YARA maintainer repository",
+      "url": "https://github.com/VirusTotal/yara",
+      "scope": "Engine and module documentation; do not silently substitute YARA-X semantics."
+    },
+    {
+      "id": "sigma",
+      "title": "Sigma specification",
+      "url": "https://sigmahq.io/sigma-specification/specification/sigma-rules-specification.html",
+      "scope": "Detection structure and selection semantics; conversion needs a verified backend pipeline."
+    },
+    {
+      "id": "splunk",
+      "title": "Splunk Security Content",
+      "url": "https://github.com/splunk/security_content",
+      "scope": "Detection engineering conventions and explicit macro/model dependencies."
+    },
+    {
+      "id": "defender",
+      "title": "Defender custom detections",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+      "scope": "Product-specific result identities and detection scheduling constraints."
+    },
+    {
+      "id": "mcp",
+      "title": "Official MCP Python SDK",
+      "url": "https://github.com/modelcontextprotocol/python-sdk",
+      "scope": "Protocol/tool implementation; this release explicitly targets the tested 1.x SDK line."
+    },
+    {
+      "id": "github",
+      "title": "GitHub organization audit documentation",
+      "url": "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization",
+      "scope": "Audit access, event context and organization-level visibility."
+    },
+    {
+      "id": "actions",
+      "title": "GitHub Actions secure use reference",
+      "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+      "scope": "Workflow trust boundaries, tokens and untrusted execution inputs."
+    },
+    {
+      "id": "owasp",
+      "title": "OWASP prompt injection guidance",
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "scope": "Untrusted instruction boundaries and observed-impact considerations."
+    },
+    {
+      "id": "otel",
+      "title": "OpenTelemetry logs data model",
+      "url": "https://opentelemetry.io/docs/specs/otel/logs/data-model/",
+      "scope": "Event versus observed timestamps and structured record context."
+    }
+  ]
+}
