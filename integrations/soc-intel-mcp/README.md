@@ -1,6 +1,8 @@
 # SOC Intel MCP
 
-An optional read-only integration shared by the community skills. It retrieves existing indicator reports and public CVE context. It never submits files or URLs for scanning, contacts an indicator directly, modifies a security platform or produces an automatic block/allow verdict.
+An optional read-only integration shared by the community skills. It retrieves existing indicator reports and public CVE context.
+
+See the [library catalog](../../CATALOG.md) for skill selection and the [integration guide](../../docs/integrations.md) for connection boundaries. It never submits files or URLs for scanning, contacts an indicator directly, modifies a security platform or produces an automatic block/allow verdict.
 
 ## Tools
 
@@ -27,7 +29,7 @@ An indicator lookup discloses its input to each configured provider. Confirm tha
 
 Responses preserve provider status and retrieval time. ThreatFox observations retain original indicator scope and observation dates; VirusTotal reports retain selected provider-defined fields and existing report references. Never equate no result, provider failure, missing credentials and benign activity. KEV data is cached for ten minutes with the original retrieval timestamp. EPSS values are dated predictions; applicability still needs vendor/product evidence.
 
-HTTPS destinations are fixed, redirects are disabled, timeouts are finite and responses are size-capped. Returned report text remains untrusted evidence. Errors do not echo request headers, credentials or provider bodies. No production deployment or live authenticated lookup was certified in this release; see `tests/intel` for mocked-provider and MCP protocol validation.
+HTTPS destinations are fixed, redirects are disabled, timeouts are finite and responses are size-capped. Returned report text remains untrusted evidence. Errors do not echo request headers, credentials or provider bodies. No production deployment or live authenticated lookup has been certified for this library; see `tests/intel` for mocked-provider and MCP protocol validation.
 
 ## Primary references
 

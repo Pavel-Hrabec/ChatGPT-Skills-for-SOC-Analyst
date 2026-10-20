@@ -241,5 +241,6 @@
       "url": "https://opentelemetry.io/docs/specs/otel/logs/data-model/",
       "scope": "Event versus observed timestamps and structured record context."
     }
-  ]
+  ],
+  "library": "AI Cybersecurity Academy skills"
 }
