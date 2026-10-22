@@ -6,7 +6,7 @@ A community library originating from the [AI & Cybersecurity Academy](https://ww
 
 ## Find and install a skill
 
-Browse the [complete catalog](CATALOG.md) or [machine-readable catalog](community-catalog.json). Download an individual ZIP from [dist/chatgpt](dist/chatgpt/) and import it into a compatible Skills interface. Describe the task, name the skill and attach the relevant evidence. Skill/interface availability depends on the host. Each skill includes a README; supporting references and connection guidance are included where relevant.
+Browse the [complete catalog](CATALOG.md) or [machine-readable catalog](community-catalog.json). Download an individual ZIP from [dist/chatgpt](dist/chatgpt/) and import it into a compatible Skills interface. Describe the task, name the skill and attach the relevant evidence. Skill/interface availability depends on the host. Each skill includes a README and task-specific guidance; connection details depend on the evidence source.
 
 - [AWS](CATALOG.md#aws) — 7 skills
 - [Azure](CATALOG.md#azure) — 5 skills
@@ -31,10 +31,11 @@ Browse the [complete catalog](CATALOG.md) or [machine-readable catalog](communit
 
 ## Knowledge and connections
 
-Skills reference primary documentation and declare their evidence requirements. They work from supplied artifacts; configured read-only tools can retrieve additional evidence. The optional [SOC Intel MCP server](integrations/soc-intel-mcp/) implements existing report lookups for public hashes/IPs/domains and CVE context. Installing a skill ZIP does not install or authenticate a service. The local server and optional loopback HTTP transport require a suitable MCP client; use an authenticated deployment/gateway for remote access.
+Skills identify the evidence they require and relevant primary documentation. They work from supplied artifacts; configured read-only tools can retrieve additional evidence. The [connection matrix](docs/connection-matrix.md) maps specialized skills to the right platform, operations and correlation fields. The optional [SOC Intel MCP server](integrations/soc-intel-mcp/) implements existing public hash, IP, domain, URL, passive-DNS and CVE lookups. It also offers an explicitly authorized urlscan.io website submission and result/screenshot links for Email Analysis. Installing a skill ZIP does not install or authenticate a service. Cloud, identity, EDR, SIEM and SaaS access requires a separately configured authorized connector. The local server and optional loopback HTTP transport require a suitable MCP client; use an authenticated deployment/gateway for remote access.
 
-See [knowledge policy](docs/knowledge-policy.md), [integration setup](docs/integrations.md) and [validation scope](docs/validation.md). The catalog indexes all 150 skills.
+See [knowledge policy](docs/knowledge-policy.md), [integration setup](docs/integrations.md) and [validation scope](docs/validation.md). `community-catalog.json` indexes all 150 skills.
 
 ## Contribute
 
 Start with a concrete security task, its actual evidence contract and a distinct output. Preserve existing skill identities when adding related capabilities. Include current primary sources, legitimate alternatives, decisive limitations and reproducible validation. Keep demo payloads separate from skill packages. Never include credentials or claim a lookup/test that did not run.
+

@@ -1,6 +1,6 @@
 # Community Skill Catalog
 
-150 focused skills across security operations and engineering. Each upload contains one self-contained skill. Individual packages can be downloaded from `dist/chatgpt/`.
+150 task-specific skills. Each upload contains one self-contained skill. Individual packages can be downloaded from `dist/chatgpt/`.
 
 ## AWS
 
