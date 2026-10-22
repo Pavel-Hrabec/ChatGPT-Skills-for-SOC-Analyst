@@ -10,6 +10,8 @@ def create_server(port=8765):
     client=IntelClient()
     annotations=ToolAnnotations(readOnlyHint=True,destructiveHint=False,
                                 idempotentHint=True,openWorldHint=True)
+    submission_annotations=ToolAnnotations(readOnlyHint=False,destructiveHint=False,
+                                           idempotentHint=False,openWorldHint=True)
 
     @server.tool(annotations=annotations)
     def lookup_hash(sha256:str)->dict:
@@ -47,6 +49,24 @@ def create_server(port=8765):
         """
         return client.lookup_url(url)
 
+    @server.tool(annotations=submission_annotations)
+    def submit_urlscan(url:str, visibility:str='private', authorized:bool=False)->dict:
+        """Submit an explicitly authorized public URL for a new remote website scan.
+
+        This contacts the site from urlscan.io and discloses the URL to that provider.
+        Defaults to private visibility. Requires URLSCAN_API_KEY and authorized=True.
+        Never infer authorization merely from finding a URL inside an email.
+        """
+        return client.submit_urlscan(url,visibility,authorized)
+
+    @server.tool(annotations=annotations)
+    def get_urlscan_result(scan_id:str)->dict:
+        """Read the result of a urlscan.io scan by UUID, including screenshot and report links.
+
+        A 404 may mean the scan is still processing. Screenshot/DOM links may not exist.
+        """
+        return client.get_urlscan_result(scan_id)
+
     @server.tool(annotations=annotations)
     def lookup_resolutions(indicator:str)->dict:
         """Read up to ten historical VirusTotal DNS resolutions for a public IP or domain.
@@ -77,3 +97,4 @@ def main():
 
 
 if __name__=='__main__': main()
+

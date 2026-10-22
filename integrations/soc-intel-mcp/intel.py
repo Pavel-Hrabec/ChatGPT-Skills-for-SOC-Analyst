@@ -1,4 +1,4 @@
-"""Bounded, read-only intelligence reports. No sample upload or active scanning."""
+"""Bounded intelligence reports and explicitly authorized urlscan submissions."""
 import base64
 from datetime import datetime, timezone
 from urllib.error import HTTPError, URLError
@@ -53,7 +53,7 @@ def request_json(url, *, headers=None, payload=None, form=None, max_bytes=104857
             return {'status':'invalid_response','retrieved_at':now()}
         return {'status':'ok','retrieved_at':now(),'data':data}
     except HTTPError as exc:
-        status={401:'unauthorized',403:'forbidden',404:'not_found',429:'rate_limited'}.get(exc.code,'http_error')
+        status={401:'unauthorized',403:'forbidden',404:'not_found',410:'gone',429:'rate_limited'}.get(exc.code,'http_error')
         return {'status':status,'http_status':exc.code,'retrieved_at':now()}
     except (URLError,TimeoutError,OSError):
         return {'status':'network_error','retrieved_at':now()}
@@ -295,16 +295,82 @@ class IntelClient:
             if not isinstance(task,dict) or task.get('url') != url: continue
             page=item.get('page') if isinstance(item.get('page'),dict) else {}
             uuid=item.get('_id')
+            if not isinstance(uuid,str) or not re.fullmatch(r'[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}',uuid):
+                continue
             matches.append({'scan_id':uuid,'scan_time':task.get('time'),
                             'submitted_url':task.get('url'),'final_url':page.get('url'),
                             'page_title':page.get('title'),'page_status':page.get('status'),
-                            'reference':f'https://urlscan.io/result/{uuid}/' if uuid else None})
+                            'reference':f'https://urlscan.io/result/{uuid}/' if uuid else None,
+                            'screenshot_url':f'https://urlscan.io/screenshots/{uuid}.png' if uuid else None,
+                            'screenshot_availability':'not_verified'})
             if len(matches)>=5: break
         return {'provider':'urlscan.io','status':'ok' if matches else 'no_exact_match_in_recent_results',
                 'retrieved_at':result['retrieved_at'],'queried_host':host,
                 'results_examined':len(scans),'matches':matches,
                 'limitations':['Search is bounded to 100 recent host results; absence is not proof of no historical scan.',
                                'This searches existing reports and does not submit or visit the URL.']}
+
+    def submit_urlscan(self, value, visibility='private', authorized=False):
+        """Submit one explicitly authorized URL to urlscan's remote browser."""
+        if authorized is not True:
+            return {'status':'authorization_required', 'message':'A new scan contacts the destination and discloses the URL to urlscan.io.'}
+        try:
+            url=public_url(value)
+        except (ValueError,UnicodeError,TypeError):
+            return {'status':'invalid_input','message':'Provide one public HTTP(S) URL without query, fragment, userinfo or unusual port.'}
+        if visibility not in ('private','unlisted','public'):
+            return {'status':'invalid_visibility','message':'Choose private, unlisted or public.'}
+        if not self.urlscan_key:
+            return {'status':'not_configured','provider':'urlscan.io','message':'URLSCAN_API_KEY is required for submission.'}
+        result=self.requester('https://urlscan.io/api/v1/scan',
+                              headers={'API-Key':self.urlscan_key},
+                              payload={'url':url,'visibility':visibility})
+        if result['status']!='ok':
+            return self.failure('urlscan.io',result)
+        data=result.get('data')
+        scan_id=data.get('uuid') if isinstance(data,dict) else None
+        if not isinstance(scan_id,str) or not re.fullmatch(r'[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}',scan_id):
+            return {'provider':'urlscan.io','status':'invalid_response','retrieved_at':result['retrieved_at']}
+        return {'provider':'urlscan.io','status':'submitted','submitted_url':url,
+                'visibility':data.get('visibility',visibility),'scan_id':scan_id,
+                'submitted_at':result['retrieved_at'],
+                'result_url':f'https://urlscan.io/result/{scan_id}/',
+                'next_step':'Call get_urlscan_result with scan_id after the scan finishes. A screenshot is not yet confirmed.'}
+
+    def get_urlscan_result(self, scan_id):
+        """Read a bounded result summary and report/screenshot links for one scan."""
+        if not isinstance(scan_id,str) or not re.fullmatch(r'[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}',scan_id):
+            return {'status':'invalid_input','message':'Provide the exact urlscan scan UUID.'}
+        if not self.urlscan_key:
+            return {'status':'not_configured','provider':'urlscan.io','message':'URLSCAN_API_KEY is required for this authenticated result lookup.'}
+        result=self.requester(f'https://urlscan.io/api/v1/result/{scan_id}/',
+                              headers={'API-Key':self.urlscan_key})
+        if result['status']=='not_found':
+            return {'provider':'urlscan.io','status':'pending_or_not_found','scan_id':scan_id,
+                    'retrieved_at':result['retrieved_at']}
+        if result['status']!='ok':
+            return self.failure('urlscan.io',result)
+        data=result.get('data')
+        if not isinstance(data,dict) or not isinstance(data.get('task'),dict) or not isinstance(data.get('page'),dict):
+            return {'provider':'urlscan.io','status':'invalid_response','retrieved_at':result['retrieved_at']}
+        task,page=data['task'],data['page']
+        lists=data.get('lists') if isinstance(data.get('lists'),dict) else {}
+        verdicts=data.get('verdicts') if isinstance(data.get('verdicts'),dict) else {}
+        urlscan_verdict=verdicts.get('urlscan') if isinstance(verdicts.get('urlscan'),dict) else {}
+        domains=lists.get('domains') if isinstance(lists.get('domains'),list) else []
+        return {'provider':'urlscan.io','status':'ready','scan_id':scan_id,
+                'retrieved_at':result['retrieved_at'],'scan_time':task.get('time'),
+                'visibility':task.get('visibility'),'submitted_url':task.get('url'),
+                'final_url':page.get('url'),'page_title':page.get('title'),
+                'page_status':page.get('status'),'redirected':page.get('redirected'),
+                'contacted_domains':domains[:20],
+                'verdict':{k:urlscan_verdict[k] for k in ('score','categories','brands') if k in urlscan_verdict},
+                'result_url':f'https://urlscan.io/result/{scan_id}/',
+                'screenshot_url':f'https://urlscan.io/screenshots/{scan_id}.png',
+                'dom_url':f'https://urlscan.io/dom/{scan_id}/',
+                'limitations':['Screenshot and DOM links may return 404 if urlscan did not store them.',
+                               'Private artifacts may require a signed-in account or API key.',
+                               'This is a point-in-time browser observation, not a guarantee of what every user sees.']}
 
     def urlhaus_url(self, url):
         if not self.urlhaus_key:
@@ -386,3 +452,4 @@ class IntelClient:
                 'limitations':['KEV absence does not establish absence of exploitation.',
                                'EPSS is a dated prediction, not proof of exploitation or asset applicability.',
                                'Catalog due dates are provider context, not an invented organization SLA.']}
+
