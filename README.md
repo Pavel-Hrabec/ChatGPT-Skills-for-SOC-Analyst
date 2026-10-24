@@ -6,7 +6,7 @@ A community library originating from the [AI & Cybersecurity Academy](https://ww
 
 ## Find and install a skill
 
-Browse the [complete catalog](CATALOG.md) or [machine-readable catalog](community-catalog.json). Download an individual ZIP from [dist/chatgpt](dist/chatgpt/) and import it into a compatible Skills interface. Describe the task, name the skill and attach the relevant evidence. Skill/interface availability depends on the host. Each skill includes a README; supporting references and connection guidance are included where relevant.
+Browse the [complete catalog](CATALOG.md) or [machine-readable catalog](community-catalog.json). Download an individual ZIP from [dist/chatgpt](dist/chatgpt/) and import it into a compatible Skills interface. For copy-and-paste task prompts that do not require importing a skill, use the [prompt library](prompts/README.md) or open a prompt from the catalog. Describe the task, name the skill and attach the relevant evidence. Skill/interface availability depends on the host. Each skill includes a README; supporting references and connection guidance are included where relevant.
 
 - [AWS](CATALOG.md#aws) — 7 skills
 - [Azure](CATALOG.md#azure) — 5 skills
