@@ -1,8 +1,8 @@
 # Community Skill Catalog
 
-150 focused skills across security operations and engineering. Each upload contains one self-contained skill. Individual packages can be downloaded from `dist/chatgpt/`.
+149 task-specific skills. Each upload contains one self-contained skill. Individual packages can be downloaded from `dist/chatgpt/`.
 
-## AWS
+## Aws
 
 7 skills
 
@@ -48,7 +48,7 @@
 |---|---|---|---|
 | [Coverage Review](skills/detection-engineering/coverage-review/) | Assess security detection coverage using actual telemetry and validation | [ZIP](dist/chatgpt/coverage-review.zip) | [Prompt](prompts/detection-engineering/coverage-review.md) |
 | [Detection Replay](skills/detection-engineering/detection-replay/) | Replay an existing detection against recorded telemetry in a controlled backend and compare expected events, entities and alert groups. | [ZIP](dist/chatgpt/detection-replay.zip) | [Prompt](prompts/detection-engineering/detection-replay.md) |
-| [Review detection logic](skills/detection-engineering/detection-review/) | Review detection logic | [ZIP](dist/chatgpt/detection-review.zip) | [Prompt](prompts/detection-engineering/detection-review.md) |
+| [Review detection logic](skills/detection-engineering/detection-review/) | Review detection logic. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/detection-review.zip) | [Prompt](prompts/detection-engineering/detection-review.md) |
 | [Duplicate Rules](skills/detection-engineering/duplicate-rules/) | Identify overlapping detections without losing distinct coverage | [ZIP](dist/chatgpt/duplicate-rules.zip) | [Prompt](prompts/detection-engineering/duplicate-rules.md) |
 | [Elastic Detection](skills/detection-engineering/elastic-detection/) | Author Elastic Security detections for a specified engine and schema | [ZIP](dist/chatgpt/elastic-detection.zip) | [Prompt](prompts/detection-engineering/elastic-detection.md) |
 | [KQL Detection](skills/detection-engineering/kql-detection/) | Build operational KQL detections for Defender XDR or Microsoft Sentinel, including result identifiers, scheduling, entities and backend-aware tests. | [ZIP](dist/chatgpt/kql-detection.zip) | [Prompt](prompts/detection-engineering/kql-detection.md) |
@@ -57,7 +57,7 @@
 | [Rule Tests](skills/detection-engineering/rule-tests/) | Create meaningful executable or backend-native tests for an existing security detection, with explicit expected matches and negative cases. | [ZIP](dist/chatgpt/rule-tests.zip) | [Prompt](prompts/detection-engineering/rule-tests.md) |
 | [Rule Tuning](skills/detection-engineering/rule-tuning/) | Reduce noise in an existing detection using labeled evidence while measuring lost coverage, regression risk and exception scope. | [ZIP](dist/chatgpt/rule-tuning.zip) | [Prompt](prompts/detection-engineering/rule-tuning.md) |
 | [Sigma](skills/detection-engineering/sigma/) | Author or convert Sigma detections from documented behavior and supplied telemetry, including backend mappings and validation requirements. | [ZIP](dist/chatgpt/sigma.zip) | [Prompt](prompts/detection-engineering/sigma.md) |
-| [Explain Sigma and YARA rules](skills/detection-engineering/sigma-yara/) | Explain Sigma and YARA rules | [ZIP](dist/chatgpt/sigma-yara.zip) | [Prompt](prompts/detection-engineering/sigma-yara.md) |
+| [Explain Sigma and YARA rules](skills/detection-engineering/sigma-yara/) | Explain Sigma and YARA rules. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/sigma-yara.zip) | [Prompt](prompts/detection-engineering/sigma-yara.md) |
 | [SPL Detection](skills/detection-engineering/spl-detection/) | Write Splunk SPL security detections with confirmed sourcetypes or CIM dependencies, operational search settings and controlled validation. | [ZIP](dist/chatgpt/spl-detection.zip) | [Prompt](prompts/detection-engineering/spl-detection.md) |
 | [Suricata](skills/detection-engineering/suricata/) | Author Suricata signatures for observable network behavior | [ZIP](dist/chatgpt/suricata.zip) | [Prompt](prompts/detection-engineering/suricata.md) |
 | [Threat Coverage](skills/detection-engineering/threat-coverage/) | Assess defensive coverage against a specific reported threat sequence | [ZIP](dist/chatgpt/threat-coverage.zip) | [Prompt](prompts/detection-engineering/threat-coverage.md) |
@@ -65,15 +65,15 @@
 
 ## Email
 
-1 skill
+1 skills
 
 | Skill | Purpose | Package | Copyable prompt |
 |---|---|---|---|
-| [Analyze suspicious email](skills/email/email-analysis/) | Analyze suspicious email | [ZIP](dist/chatgpt/email-analysis.zip) | [Prompt](prompts/email/email-analysis.md) |
+| [Analyze suspicious email](skills/email/email-analysis/) | Analyze suspicious email. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/email-analysis.zip) | [Prompt](prompts/email/email-analysis.md) |
 
 ## Endpoint
 
-20 skills
+21 skills
 
 | Skill | Purpose | Package | Copyable prompt |
 |---|---|---|---|
@@ -83,22 +83,23 @@
 | [Defender Tampering](skills/endpoint/defender-tampering/) | Investigate changes that impair Microsoft Defender or its visibility | [ZIP](dist/chatgpt/defender-tampering.zip) | [Prompt](prompts/endpoint/defender-tampering.md) |
 | [DLL Loading](skills/endpoint/dll-loading/) | Assess suspicious DLL loading and potential side-loading | [ZIP](dist/chatgpt/dll-loading.zip) | [Prompt](prompts/endpoint/dll-loading.md) |
 | [Driver Abuse](skills/endpoint/driver-abuse/) | Assess suspicious kernel driver loading and vulnerable-driver abuse | [ZIP](dist/chatgpt/driver-abuse.zip) | [Prompt](prompts/endpoint/driver-abuse.md) |
+| [Local System Discovery](skills/endpoint/local-discovery/) | Analyze endpoint evidence showing commands or processes gathering local identity, system, network, process, service, session, or privilege information. | [ZIP](dist/chatgpt/local-discovery.zip) | [Prompt](prompts/endpoint/local-discovery.md) |
 | [LSASS](skills/endpoint/lsass/) | Investigate suspected LSASS memory access and credential dumping | [ZIP](dist/chatgpt/lsass.zip) | [Prompt](prompts/endpoint/lsass.md) |
 | [Named Pipes](skills/endpoint/named-pipes/) | Investigate suspicious named-pipe creation and connections | [ZIP](dist/chatgpt/named-pipes.zip) | [Prompt](prompts/endpoint/named-pipes.md) |
-| [Inspect Office macro evidence](skills/endpoint/office-macros/) | Inspect Office macro evidence | [ZIP](dist/chatgpt/office-macros.zip) | [Prompt](prompts/endpoint/office-macros.md) |
-| [Analyze PowerShell evidence](skills/endpoint/powershell/) | Analyze PowerShell evidence | [ZIP](dist/chatgpt/powershell.zip) | [Prompt](prompts/endpoint/powershell.md) |
-| [Analyze a process tree](skills/endpoint/process-tree/) | Analyze a process tree | [ZIP](dist/chatgpt/process-tree.zip) | [Prompt](prompts/endpoint/process-tree.md) |
-| [Analyze registry changes](skills/endpoint/registry/) | Analyze registry changes | [ZIP](dist/chatgpt/registry.zip) | [Prompt](prompts/endpoint/registry.md) |
+| [Inspect Office macro evidence](skills/endpoint/office-macros/) | Inspect Office macro evidence. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/office-macros.zip) | [Prompt](prompts/endpoint/office-macros.md) |
+| [Analyze PowerShell evidence](skills/endpoint/powershell/) | Analyze PowerShell evidence. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/powershell.zip) | [Prompt](prompts/endpoint/powershell.md) |
+| [Analyze a process tree](skills/endpoint/process-tree/) | Analyze a process tree. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/process-tree.zip) | [Prompt](prompts/endpoint/process-tree.md) |
+| [Analyze registry changes](skills/endpoint/registry/) | Analyze registry changes. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/registry.zip) | [Prompt](prompts/endpoint/registry.md) |
 | [Remote Thread](skills/endpoint/remote-thread/) | Investigate cross-process thread creation and injection hypotheses | [ZIP](dist/chatgpt/remote-thread.zip) | [Prompt](prompts/endpoint/remote-thread.md) |
-| [Decode suspicious script evidence](skills/endpoint/script-decode/) | Decode suspicious script evidence | [ZIP](dist/chatgpt/script-decode.zip) | [Prompt](prompts/endpoint/script-decode.md) |
+| [Decode suspicious script evidence](skills/endpoint/script-decode/) | Decode suspicious script evidence. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/script-decode.zip) | [Prompt](prompts/endpoint/script-decode.md) |
 | [Shadow Copies](skills/endpoint/shadow-copy/) | Investigate deletion or disruption of backups and shadow copies | [ZIP](dist/chatgpt/shadow-copy.zip) | [Prompt](prompts/endpoint/shadow-copy.md) |
-| [Analyze scheduled tasks and services](skills/endpoint/tasks-services/) | Analyze scheduled tasks and services | [ZIP](dist/chatgpt/tasks-services.zip) | [Prompt](prompts/endpoint/tasks-services.md) |
-| [Interpret Windows command lines](skills/endpoint/windows-command/) | Interpret Windows command lines | [ZIP](dist/chatgpt/windows-command.zip) | [Prompt](prompts/endpoint/windows-command.md) |
-| [Investigate Windows event records](skills/endpoint/windows-events/) | Investigate Windows event records | [ZIP](dist/chatgpt/windows-events.zip) | [Prompt](prompts/endpoint/windows-events.md) |
+| [Analyze scheduled tasks and services](skills/endpoint/tasks-services/) | Analyze scheduled tasks and services. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/tasks-services.zip) | [Prompt](prompts/endpoint/tasks-services.md) |
+| [Interpret Windows command lines](skills/endpoint/windows-command/) | Interpret Windows command lines. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/windows-command.zip) | [Prompt](prompts/endpoint/windows-command.md) |
+| [Investigate Windows event records](skills/endpoint/windows-events/) | Investigate Windows event records. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/windows-events.zip) | [Prompt](prompts/endpoint/windows-events.md) |
 | [WMI Execution](skills/endpoint/wmi-execution/) | Investigate remote or local process execution through WMI | [ZIP](dist/chatgpt/wmi-execution.zip) | [Prompt](prompts/endpoint/wmi-execution.md) |
 | [WMI Persistence](skills/endpoint/wmi-persistence/) | Investigate permanent WMI event subscriptions and their execution evidence | [ZIP](dist/chatgpt/wmi-persistence.zip) | [Prompt](prompts/endpoint/wmi-persistence.md) |
 
-## GCP
+## Gcp
 
 5 skills
 
@@ -116,7 +117,8 @@
 
 | Skill | Purpose | Package | Copyable prompt |
 |---|---|---|---|
-| [Review Active Directory changes](skills/identity/ad-changes/) | Review Active Directory changes | [ZIP](dist/chatgpt/ad-changes.zip) | [Prompt](prompts/identity/ad-changes.md) |
+| [Review Active Directory changes](skills/identity/ad-changes/) | Review Active Directory changes. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/ad-changes.zip) | [Prompt](prompts/identity/ad-changes.md) |
+| [Active Directory Discovery](skills/identity/ad-discovery/) | Analyze directory enumeration evidence from LDAP, native Windows utilities, and AD assessment tools, including queried objects, scope, identity, and surrounding activity. | [ZIP](dist/chatgpt/ad-discovery.zip) | [Prompt](prompts/identity/ad-discovery.md) |
 | [AD CS](skills/identity/adcs/) | Investigate suspicious Active Directory certificate issuance and template changes | [ZIP](dist/chatgpt/adcs.zip) | [Prompt](prompts/identity/adcs.md) |
 | [AS-REP Roasting](skills/identity/asrep-roasting/) | Investigate authentication requests involving accounts without Kerberos preauthentication | [ZIP](dist/chatgpt/asrep-roasting.zip) | [Prompt](prompts/identity/asrep-roasting.md) |
 | [DCShadow](skills/identity/dcshadow/) | Investigate suspicious directory replication registration and object changes | [ZIP](dist/chatgpt/dcshadow.zip) | [Prompt](prompts/identity/dcshadow.md) |
@@ -125,12 +127,11 @@
 | [Golden Ticket](skills/identity/golden-ticket/) | Assess forged Kerberos ticket hypotheses using corroborated authentication evidence | [ZIP](dist/chatgpt/golden-ticket.zip) | [Prompt](prompts/identity/golden-ticket.md) |
 | [GPO Abuse](skills/identity/gpo-abuse/) | Investigate unauthorized Group Policy changes and resulting endpoint behavior | [ZIP](dist/chatgpt/gpo-abuse.zip) | [Prompt](prompts/identity/gpo-abuse.md) |
 | [Kerberoasting](skills/identity/kerberoasting/) | Investigate suspicious Kerberos service-ticket requests | [ZIP](dist/chatgpt/kerberoasting.zip) | [Prompt](prompts/identity/kerberoasting.md) |
-| [Investigate Kerberos events](skills/identity/kerberos/) | Investigate Kerberos events | [ZIP](dist/chatgpt/kerberos.zip) | [Prompt](prompts/identity/kerberos.md) |
-| [Analyze LDAP activity](skills/identity/ldap/) | Analyze LDAP activity | [ZIP](dist/chatgpt/ldap.zip) | [Prompt](prompts/identity/ldap.md) |
+| [Investigate Kerberos events](skills/identity/kerberos/) | Investigate Kerberos events. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/kerberos.zip) | [Prompt](prompts/identity/kerberos.md) |
 | [NTLM Relay](skills/identity/ntlm-relay/) | Investigate suspected relayed NTLM authentication | [ZIP](dist/chatgpt/ntlm-relay.zip) | [Prompt](prompts/identity/ntlm-relay.md) |
 | [Password Spray](skills/identity/password-spray/) | Investigate low-frequency authentication attempts spread across accounts | [ZIP](dist/chatgpt/password-spray.zip) | [Prompt](prompts/identity/password-spray.md) |
-| [Review privileged access](skills/identity/privileged-access/) | Review privileged access | [ZIP](dist/chatgpt/privileged-access.zip) | [Prompt](prompts/identity/privileged-access.md) |
-| [Investigate sign-in anomalies](skills/identity/sign-in/) | Investigate sign-in anomalies | [ZIP](dist/chatgpt/sign-in.zip) | [Prompt](prompts/identity/sign-in.md) |
+| [Review privileged access](skills/identity/privileged-access/) | Review privileged access. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/privileged-access.zip) | [Prompt](prompts/identity/privileged-access.md) |
+| [Investigate sign-in anomalies](skills/identity/sign-in/) | Investigate sign-in anomalies. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/sign-in.zip) | [Prompt](prompts/identity/sign-in.md) |
 
 ## Incident Response
 
@@ -139,13 +140,13 @@
 | Skill | Purpose | Package | Copyable prompt |
 |---|---|---|---|
 | [Containment Plan](skills/incident-response/containment-plan/) | Develop a scoped containment plan from confirmed incident evidence | [ZIP](dist/chatgpt/containment-plan.zip) | [Prompt](prompts/incident-response/containment-plan.md) |
-| [Write an incident escalation](skills/incident-response/escalation/) | Write an incident escalation | [ZIP](dist/chatgpt/escalation.zip) | [Prompt](prompts/incident-response/escalation.md) |
+| [Write an incident escalation](skills/incident-response/escalation/) | Write an incident escalation. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/escalation.zip) | [Prompt](prompts/incident-response/escalation.md) |
 | [Evidence Preservation](skills/incident-response/evidence-preservation/) | Plan and document defensible preservation of security evidence | [ZIP](dist/chatgpt/evidence-preservation.zip) | [Prompt](prompts/incident-response/evidence-preservation.md) |
-| [Draft an incident report](skills/incident-response/incident-report/) | Draft an incident report | [ZIP](dist/chatgpt/incident-report.zip) | [Prompt](prompts/incident-response/incident-report.md) |
-| [Expand incident scope safely](skills/incident-response/incident-scope/) | Expand incident scope safely | [ZIP](dist/chatgpt/incident-scope.zip) | [Prompt](prompts/incident-response/incident-scope.md) |
+| [Draft an incident report](skills/incident-response/incident-report/) | Draft an incident report. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/incident-report.zip) | [Prompt](prompts/incident-response/incident-report.md) |
+| [Expand incident scope safely](skills/incident-response/incident-scope/) | Expand incident scope safely. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/incident-scope.zip) | [Prompt](prompts/incident-response/incident-scope.md) |
 | [Recovery Review](skills/incident-response/recovery-review/) | Review whether recovery evidence supports safe restoration and monitoring | [ZIP](dist/chatgpt/recovery-review.zip) | [Prompt](prompts/incident-response/recovery-review.md) |
-| [Build an incident timeline](skills/incident-response/timeline/) | Build an incident timeline | [ZIP](dist/chatgpt/timeline.zip) | [Prompt](prompts/incident-response/timeline.md) |
-| [Interpret an XDR alert](skills/incident-response/xdr-alert/) | Interpret an XDR alert | [ZIP](dist/chatgpt/xdr-alert.zip) | [Prompt](prompts/incident-response/xdr-alert.md) |
+| [Build an incident timeline](skills/incident-response/timeline/) | Build an incident timeline. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/timeline.zip) | [Prompt](prompts/incident-response/timeline.md) |
+| [Interpret an XDR alert](skills/incident-response/xdr-alert/) | Interpret an XDR alert. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/xdr-alert.zip) | [Prompt](prompts/incident-response/xdr-alert.md) |
 
 ## Linux
 
@@ -194,24 +195,25 @@
 
 ## Network
 
-12 skills
+13 skills
 
 | Skill | Purpose | Package | Copyable prompt |
 |---|---|---|---|
 | [Beaconing](skills/network/beaconing/) | Investigate periodic outbound communication and command-and-control hypotheses | [ZIP](dist/chatgpt/beaconing.zip) | [Prompt](prompts/network/beaconing.md) |
 | [Data Exfiltration](skills/network/data-exfiltration/) | Investigate suspected outbound data transfer | [ZIP](dist/chatgpt/data-exfiltration.zip) | [Prompt](prompts/network/data-exfiltration.md) |
-| [Analyze DNS events](skills/network/dns/) | Analyze DNS events | [ZIP](dist/chatgpt/dns.zip) | [Prompt](prompts/network/dns.md) |
+| [Analyze DNS events](skills/network/dns/) | Analyze DNS events. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/dns.zip) | [Prompt](prompts/network/dns.md) |
 | [DNS Tunneling](skills/network/dns-tunneling/) | Investigate DNS traffic that may carry a covert channel | [ZIP](dist/chatgpt/dns-tunneling.zip) | [Prompt](prompts/network/dns-tunneling.md) |
-| [Analyze network flows](skills/network/network-flow/) | Analyze network flows | [ZIP](dist/chatgpt/network-flow.zip) | [Prompt](prompts/network/network-flow.md) |
-| [Interpret packet-analysis summaries](skills/network/pcap-summary/) | Interpret packet-analysis summaries | [ZIP](dist/chatgpt/pcap-summary.zip) | [Prompt](prompts/network/pcap-summary.md) |
-| [Review proxy and URL events](skills/network/proxy-url/) | Review proxy and URL events | [ZIP](dist/chatgpt/proxy-url.zip) | [Prompt](prompts/network/proxy-url.md) |
+| [Network Recon and SMB Discovery](skills/network/network-discovery/) | Analyze authorized scan scope and results, scanning alerts, remote host and service discovery, and SMB share enumeration from supplied evidence. | [ZIP](dist/chatgpt/network-discovery.zip) | [Prompt](prompts/network/network-discovery.md) |
+| [Analyze network flows](skills/network/network-flow/) | Analyze network flows. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/network-flow.zip) | [Prompt](prompts/network/network-flow.md) |
+| [Interpret packet-analysis summaries](skills/network/pcap-summary/) | Interpret packet-analysis summaries. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/pcap-summary.zip) | [Prompt](prompts/network/pcap-summary.md) |
+| [Review proxy and URL events](skills/network/proxy-url/) | Review proxy and URL events. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/proxy-url.zip) | [Prompt](prompts/network/proxy-url.md) |
 | [RDP Lateral](skills/network/rdp-lateral/) | Investigate suspicious Remote Desktop sessions | [ZIP](dist/chatgpt/rdp-lateral.zip) | [Prompt](prompts/network/rdp-lateral.md) |
 | [SMB Lateral](skills/network/smb-lateral/) | Investigate suspicious SMB-based movement between hosts | [ZIP](dist/chatgpt/smb-lateral.zip) | [Prompt](prompts/network/smb-lateral.md) |
 | [TLS Analysis](skills/network/tls-analysis/) | Assess suspicious TLS metadata and certificate relationships | [ZIP](dist/chatgpt/tls-analysis.zip) | [Prompt](prompts/network/tls-analysis.md) |
 | [Web Attacks](skills/network/web-attacks/) | Investigate suspected exploitation attempts in HTTP or WAF evidence | [ZIP](dist/chatgpt/web-attacks.zip) | [Prompt](prompts/network/web-attacks.md) |
 | [WinRM Lateral](skills/network/winrm-lateral/) | Investigate remote management execution through WinRM | [ZIP](dist/chatgpt/winrm-lateral.zip) | [Prompt](prompts/network/winrm-lateral.md) |
 
-## SaaS Development
+## Saas Development
 
 4 skills
 
@@ -233,15 +235,15 @@
 | [Enrichment Pipeline](skills/security-automation/enrichment-pipeline/) | Build a bounded intelligence enrichment workflow with provenance | [ZIP](dist/chatgpt/enrichment-pipeline.zip) | [Prompt](prompts/security-automation/enrichment-pipeline.md) |
 | [SOAR Playbook](skills/security-automation/soar-playbook/) | Design a reviewable automation playbook for a defined security workflow | [ZIP](dist/chatgpt/soar-playbook.zip) | [Prompt](prompts/security-automation/soar-playbook.md) |
 
-## SIEM
+## Siem
 
 3 skills
 
 | Skill | Purpose | Package | Copyable prompt |
 |---|---|---|---|
-| [Draft and explain ES&#124;QL](skills/siem/esql/) | Draft and explain ES&#124;QL | [ZIP](dist/chatgpt/esql.zip) | [Prompt](prompts/siem/esql.md) |
-| [Draft and explain KQL](skills/siem/kql/) | Draft and explain KQL | [ZIP](dist/chatgpt/kql.zip) | [Prompt](prompts/siem/kql.md) |
-| [Interpret SIEM query results](skills/siem/query-results/) | Interpret SIEM query results | [ZIP](dist/chatgpt/query-results.zip) | [Prompt](prompts/siem/query-results.md) |
+| [Draft and explain ES|QL](skills/siem/esql/) | Draft and explain ES|QL. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/esql.zip) | [Prompt](prompts/siem/esql.md) |
+| [Draft and explain KQL](skills/siem/kql/) | Draft and explain KQL. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/kql.zip) | [Prompt](prompts/siem/kql.md) |
+| [Interpret SIEM query results](skills/siem/query-results/) | Interpret SIEM query results. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/query-results.zip) | [Prompt](prompts/siem/query-results.md) |
 
 ## Telemetry Engineering
 
@@ -260,18 +262,18 @@
 | Skill | Purpose | Package | Copyable prompt |
 |---|---|---|---|
 | [Campaign Review](skills/threat-intelligence/campaign-review/) | Evaluate whether observed incident evidence matches a reported campaign | [ZIP](dist/chatgpt/campaign-review.zip) | [Prompt](prompts/threat-intelligence/campaign-review.md) |
-| [Review file-hash evidence](skills/threat-intelligence/hash-analysis/) | Review file-hash evidence | [ZIP](dist/chatgpt/hash-analysis.zip) | [Prompt](prompts/threat-intelligence/hash-analysis.md) |
+| [Review file-hash evidence](skills/threat-intelligence/hash-analysis/) | Review file-hash evidence. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/hash-analysis.zip) | [Prompt](prompts/threat-intelligence/hash-analysis.md) |
 | [Indicator Expiry](skills/threat-intelligence/indicator-expiry/) | Propose evidence-based indicator retention and review policies | [ZIP](dist/chatgpt/indicator-expiry.zip) | [Prompt](prompts/threat-intelligence/indicator-expiry.md) |
 | [Infrastructure Links](skills/threat-intelligence/infrastructure-links/) | Assess relationships among suspicious domains, IPs and certificates | [ZIP](dist/chatgpt/infrastructure-links.zip) | [Prompt](prompts/threat-intelligence/infrastructure-links.md) |
 | [Intel Dedup](skills/threat-intelligence/intel-dedup/) | Deduplicate intelligence while preserving distinct observations and source lineage | [ZIP](dist/chatgpt/intel-dedup.zip) | [Prompt](prompts/threat-intelligence/intel-dedup.md) |
 | [Intel to Hunt](skills/threat-intelligence/intel-to-hunt/) | Translate a threat report into testable defensive hunt hypotheses | [ZIP](dist/chatgpt/intel-to-hunt.zip) | [Prompt](prompts/threat-intelligence/intel-to-hunt.md) |
-| [Analyze indicators of compromise](skills/threat-intelligence/ioc-analysis/) | Analyze indicators of compromise | [ZIP](dist/chatgpt/ioc-analysis.zip) | [Prompt](prompts/threat-intelligence/ioc-analysis.md) |
-| [Interpret malware sandbox reports](skills/threat-intelligence/sandbox-report/) | Interpret malware sandbox reports | [ZIP](dist/chatgpt/sandbox-report.zip) | [Prompt](prompts/threat-intelligence/sandbox-report.md) |
+| [Analyze indicators of compromise](skills/threat-intelligence/ioc-analysis/) | Analyze indicators of compromise. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/ioc-analysis.zip) | [Prompt](prompts/threat-intelligence/ioc-analysis.md) |
+| [Interpret malware sandbox reports](skills/threat-intelligence/sandbox-report/) | Interpret malware sandbox reports. Use when an analyst provides relevant alert, log, query, or artifact evidence and asks for this specific analysis. Do not claim data access, enrichment, execution, or changes unless actually performed through an available authorized tool. | [ZIP](dist/chatgpt/sandbox-report.zip) | [Prompt](prompts/threat-intelligence/sandbox-report.md) |
 | [STIX Review](skills/threat-intelligence/stix-review/) | Review STIX intelligence objects and relationships for semantic validity | [ZIP](dist/chatgpt/stix-review.zip) | [Prompt](prompts/threat-intelligence/stix-review.md) |
 
 ## Threat Intelligence Engineering
 
-1 skill
+1 skills
 
 | Skill | Purpose | Package | Copyable prompt |
 |---|---|---|---|
@@ -279,7 +281,7 @@
 
 ## Vulnerability Management
 
-8 skills
+5 skills
 
 | Skill | Purpose | Package | Copyable prompt |
 |---|---|---|---|
@@ -287,7 +289,5 @@
 | [Exposure Review](skills/vulnerability-management/exposure-review/) | Review whether a vulnerable service is reachable in its actual environment | [ZIP](dist/chatgpt/exposure-review.zip) | [Prompt](prompts/vulnerability-management/exposure-review.md) |
 | [Patch Priority](skills/vulnerability-management/patch-priority/) | Prioritize remediation using exploitation evidence and asset context | [ZIP](dist/chatgpt/patch-priority.zip) | [Prompt](prompts/vulnerability-management/patch-priority.md) |
 | [Remediation Review](skills/vulnerability-management/remediation-review/) | Verify remediation evidence and detect incomplete fixes | [ZIP](dist/chatgpt/remediation-review.zip) | [Prompt](prompts/vulnerability-management/remediation-review.md) |
-| [Analyze port-scan alerts](skills/vulnerability-management/scan-alert/) | Analyze port-scan alerts | [ZIP](dist/chatgpt/scan-alert.zip) | [Prompt](prompts/vulnerability-management/scan-alert.md) |
-| [Review vulnerability scan results](skills/vulnerability-management/scan-results/) | Review vulnerability scan results | [ZIP](dist/chatgpt/scan-results.zip) | [Prompt](prompts/vulnerability-management/scan-results.md) |
-| [Plan an authorized scan scope](skills/vulnerability-management/scan-scope/) | Plan an authorized scan scope | [ZIP](dist/chatgpt/scan-scope.zip) | [Prompt](prompts/vulnerability-management/scan-scope.md) |
 | [Vulnerability Validation](skills/vulnerability-management/vulnerability-validation/) | Validate scanner findings through version and configuration evidence | [ZIP](dist/chatgpt/vulnerability-validation.zip) | [Prompt](prompts/vulnerability-management/vulnerability-validation.md) |
+
